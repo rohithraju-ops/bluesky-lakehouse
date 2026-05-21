@@ -13,8 +13,8 @@ services:
       - --memory=1G
       - --mode=dev-container
     ports:
-      - "19092:19092"   # Kafka API (clients connect here)
-      - "9644:9644"     # Admin API
+      - "19092:19092"
+      - "9644:9644"
     healthcheck:
       test: ["CMD-SHELL", "rpk cluster health | grep -E 'Healthy:.+true'"]
       interval: 10s
@@ -31,3 +31,39 @@ services:
       - "8080:8080"
     environment:
       KAFKA_BROKERS: redpanda:9092
+
+  minio:
+    image: minio/minio:latest
+    container_name: minio
+    command: server /data --console-address ":9001"
+    ports:
+      - "9000:9000"   # S3 API (programmatic access)
+      - "9001:9001"   # MinIO Console (web UI)
+    environment:
+      MINIO_ROOT_USER: minio
+      MINIO_ROOT_PASSWORD: minio123
+    volumes:
+      - minio-data:/data
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:9000/minio/health/live"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # One-shot init: creating the `lakehouse` bucket and exiting after success.
+  mc-init:
+    image: minio/mc:latest
+    container_name: mc-init
+    depends_on:
+      minio:
+        condition: service_healthy
+    entrypoint: >
+      /bin/sh -c "
+      mc alias set local http://minio:9000 minio minio123 &&
+      mc mb --ignore-existing local/lakehouse &&
+      mc ls local/ &&
+      echo 'bucket lakehouse ready'
+      "
+
+volumes:
+  minio-data:
