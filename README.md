@@ -11,4 +11,7 @@ uv run python scripts/test_jetstream.py
 uv run python scripts/test_redpanda.py
 
 ## Day-by-day notes
-- Day 1: project scaffold, Redpanda up, firehose + broker smoke tests pass.
+- Project scaffold, Redpanda up, firehose + broker smoke tests pass.
+- Continous Ingestion + MinIO foundation
+- Risingwave + First Materialized View
+- Polaris catalog + Iceberg sink and parquet files landing in MinIO
