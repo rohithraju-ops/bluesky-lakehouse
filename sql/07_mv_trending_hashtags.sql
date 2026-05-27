@@ -10,7 +10,7 @@
 
 -- RisingWave requires TUMBLE's first arg to be a named source/CTE/view, not a
 -- raw subquery. Use a CTE to name the hashtag extraction step.
-CREATE MATERIALIZED VIEW trending_hashtags_5m AS
+CREATE MATERIALIZED VIEW IF NOT EXISTS trending_hashtags_5m AS
 WITH hashtag_events AS (
     SELECT
         event_time,

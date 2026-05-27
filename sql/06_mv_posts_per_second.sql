@@ -3,7 +3,7 @@
 -- Streamlit polls this MV to drive the live throughput chart.
 -- Each row represents one closed 1-second bucket; older buckets never change.
 
-CREATE MATERIALIZED VIEW posts_per_second AS
+CREATE MATERIALIZED VIEW IF NOT EXISTS posts_per_second AS
 SELECT
     window_start AS second_bucket,
     COUNT(*)     AS post_count

@@ -5,7 +5,7 @@
 -- Useful for smoothing out bursty spikes in a single window.
 
 -- Same CTE pattern as sql/07: HOP also requires a named table, not a subquery.
-CREATE MATERIALIZED VIEW trending_hashtags_1h_hop AS
+CREATE MATERIALIZED VIEW IF NOT EXISTS trending_hashtags_1h_hop AS
 WITH hashtag_events AS (
     SELECT
         event_time,

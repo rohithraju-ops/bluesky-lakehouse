@@ -7,7 +7,7 @@
 -- Regular VIEW (not MATERIALIZED): RisingWave forbids now() in the SELECT clause
 -- of a streaming MV. A plain view evaluates now() at query time instead.
 
-CREATE VIEW event_lateness_hist AS
+CREATE VIEW IF NOT EXISTS event_lateness_hist AS
 SELECT
     FLOOR(EXTRACT(EPOCH FROM (now() - event_time)))::INT AS lateness_seconds,
     COUNT(*) AS event_count

@@ -8,7 +8,7 @@
 -- The self-join works because RisingWave maintains both sides as streaming state;
 -- window a looks back at all b rows within the trailing 1-hour interval.
 
-CREATE MATERIALIZED VIEW lang_post_rate_1m AS
+CREATE MATERIALIZED VIEW IF NOT EXISTS lang_post_rate_1m AS
 SELECT
     window_start AS minute_bucket,
     COALESCE((commit).record.langs[1], 'unknown') AS lang,
@@ -18,7 +18,7 @@ WHERE (commit).operation  = 'create'
   AND (commit).collection = 'app.bsky.feed.post'
 GROUP BY window_start, COALESCE((commit).record.langs[1], 'unknown');
 
-CREATE MATERIALIZED VIEW lang_spike_detector AS
+CREATE MATERIALIZED VIEW IF NOT EXISTS lang_spike_detector AS
 SELECT
     a.minute_bucket,
     a.lang,

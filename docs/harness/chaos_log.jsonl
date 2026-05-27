@@ -1,0 +1,15 @@
+{"ts": "2026-05-27T20:46:25.529390+00:00", "event": "scenario_start", "name": "pause_polaris"}
+{"ts": "2026-05-27T20:46:25.616912+00:00", "event": "paused", "container": "polaris"}
+{"ts": "2026-05-27T20:46:45.666787+00:00", "event": "unpaused", "container": "polaris"}
+{"ts": "2026-05-27T20:46:45.667246+00:00", "event": "scenario_end", "name": "pause_polaris"}
+{"ts": "2026-05-27T20:46:50.672360+00:00", "event": "all_scenarios_complete"}
+{"ts": "2026-05-27T20:46:50.739656+00:00", "event": "scenario_start", "name": "restart_minio"}
+{"ts": "2026-05-27T20:46:51.127489+00:00", "event": "restarted", "container": "minio"}
+{"ts": "2026-05-27T20:47:06.132054+00:00", "event": "scenario_end", "name": "restart_minio"}
+{"ts": "2026-05-27T20:47:11.136316+00:00", "event": "all_scenarios_complete"}
+{"ts": "2026-05-27T20:51:43.707517+00:00", "event": "scenario_start", "name": "kill_redpanda"}
+{"ts": "2026-05-27T20:51:44.075910+00:00", "event": "killed", "container": "redpanda"}
+{"ts": "2026-05-27T20:51:54.206856+00:00", "event": "restarted", "container": "redpanda"}
+{"ts": "2026-05-27T20:52:04.404396+00:00", "event": "healthy", "container": "redpanda"}
+{"ts": "2026-05-27T20:52:04.404840+00:00", "event": "scenario_end", "name": "kill_redpanda"}
+{"ts": "2026-05-27T20:52:09.414951+00:00", "event": "all_scenarios_complete"}
