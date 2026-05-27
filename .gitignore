@@ -10,3 +10,6 @@ data/
 
 # Interview prep notes — local only, never pushed
 docs/build_log/
+# bootstrap pid files
+.ingestor.pid
+.streamlit.pid
