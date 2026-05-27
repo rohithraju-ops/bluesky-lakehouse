@@ -1204,3 +1204,25 @@ with relations AS (
 [0m14:12:36.451575 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10defb710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ea287e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e83bc20>]}
 [0m14:12:36.451686 [debug] [MainThread]: Flushing usage events
 [0m14:12:36.949355 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:14:19.457281 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108c4a3c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109dc7750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109dc7b10>]}
+
+
+============================== 14:14:19.459131 | f123618e-eb1b-4df4-8f9e-4561c8a9e0ec ==============================
+[0m14:14:19.459131 [info ] [MainThread]: Running with dbt=1.11.11
+[0m14:14:19.459338 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'log_format': 'default', 'fail_fast': 'False', 'empty': 'None', 'use_colors': 'True', 'cache_selected_only': 'False', 'debug': 'False', 'no_print': 'None', 'version_check': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'use_experimental_parser': 'False', 'invocation_command': 'dbt parse', 'send_anonymous_usage_stats': 'True', 'target_path': 'None', 'log_path': '/Users/r0ebot/Projects/bluesky-lakehouse/analytics/logs', 'profiles_dir': '.', 'printer_width': '80', 'indirect_selection': 'eager', 'warn_error': 'None', 'write_json': 'True', 'quiet': 'False', 'static_parser': 'True'}
+[0m14:14:19.530712 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'f123618e-eb1b-4df4-8f9e-4561c8a9e0ec', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1090ed6e0>]}
+[0m14:14:19.550932 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'f123618e-eb1b-4df4-8f9e-4561c8a9e0ec', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109e13350>]}
+[0m14:14:19.555395 [info ] [MainThread]: Registered adapter: duckdb=1.10.1
+[0m14:14:19.589677 [debug] [MainThread]: checksum: 30a8cc8fdcbf66701b0944d4ccce3fa46dd04b61e5df68b9f16d57b2e0e3f0be, vars: {}, profile: , target: , version: 1.11.11
+[0m14:14:19.640916 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m14:14:19.641081 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m14:14:19.641175 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m14:14:19.655712 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'f123618e-eb1b-4df4-8f9e-4561c8a9e0ec', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109ed1f50>]}
+[0m14:14:19.656875 [info ] [MainThread]: Performance info: /Users/r0ebot/Projects/bluesky-lakehouse/analytics/target/perf_info.json
+[0m14:14:19.707937 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/r0ebot/Projects/bluesky-lakehouse/analytics/target/manifest.json
+[0m14:14:19.708677 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/r0ebot/Projects/bluesky-lakehouse/analytics/target/semantic_manifest.json
+[0m14:14:19.709907 [debug] [MainThread]: Resource report: {"command_name": "parse", "command_success": true, "command_wall_clock_time": 0.281684, "process_in_blocks": "0", "process_kernel_time": 0.096425, "process_mem_max_rss": "142524416", "process_out_blocks": "0", "process_user_time": 0.624814}
+[0m14:14:19.710061 [debug] [MainThread]: Command `dbt parse` succeeded at 14:14:19.710032 after 0.28 seconds
+[0m14:14:19.710178 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109e799a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109e7ac60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109cdbe70>]}
+[0m14:14:19.710289 [debug] [MainThread]: Flushing usage events
+[0m14:14:20.242421 [debug] [MainThread]: An error was encountered while trying to flush usage events

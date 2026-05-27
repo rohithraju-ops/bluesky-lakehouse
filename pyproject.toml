@@ -6,6 +6,9 @@ readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
     "confluent-kafka>=2.14.0",
+    "dagster>=1.8",
+    "dagster-dbt>=0.24",
+    "dagster-webserver>=1.8",
     "dbt-duckdb>=1.8",
     "pandas>=3.0.3",
     "psycopg[binary]>=3",
