@@ -1,0 +1,10 @@
+# analytics/models/sources.yml
+version: 2
+
+sources:
+  - name: lakehouse
+    description: "Iceberg tables in Polaris/MinIO"
+    schema: bsky
+    tables:
+      - name: posts
+        description: "Flattened Bluesky posts stream from RisingWave"

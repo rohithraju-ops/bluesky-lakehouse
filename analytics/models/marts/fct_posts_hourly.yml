@@ -1,0 +1,20 @@
+# analytics/models/marts/fct_posts_hourly.yml
+version: 2
+
+models:
+  - name: fct_posts_hourly
+    description: "Hourly post counts per language with rolling 24h window"
+    columns:
+      - name: hour_bucket
+        tests: [not_null]
+      - name: post_count
+        tests:
+          - dbt_utils.expression_is_true:
+              arguments:
+                expression: ">= 0"
+
+  - name: dim_languages
+    description: "Language dimension with first/last seen and total post counts"
+    columns:
+      - name: lang_code
+        tests: [not_null, unique]

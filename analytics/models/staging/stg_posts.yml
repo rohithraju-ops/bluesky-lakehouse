@@ -1,0 +1,13 @@
+# analytics/models/staging/stg_posts.yml
+version: 2
+
+models:
+  - name: stg_posts
+    description: "Cleaned Bluesky posts, harness markers excluded"
+    columns:
+      - name: did
+        tests: [not_null]
+      - name: text
+        tests: [not_null]
+      - name: event_time
+        tests: [not_null]

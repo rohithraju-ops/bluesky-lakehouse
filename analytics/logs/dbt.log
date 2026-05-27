@@ -1,0 +1,1206 @@
+[0m14:11:08.217082 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1084fcec0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109707890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1097079d0>]}
+
+
+============================== 14:11:08.231140 | 7527229b-8ae0-4945-b34a-a2a7e11fbc05 ==============================
+[0m14:11:08.231140 [info ] [MainThread]: Running with dbt=1.11.11
+[0m14:11:08.231398 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'use_colors': 'True', 'empty': 'None', 'invocation_command': 'dbt deps', 'log_format': 'default', 'fail_fast': 'False', 'target_path': 'None', 'use_experimental_parser': 'False', 'log_path': '/Users/r0ebot/Projects/bluesky-lakehouse/analytics/logs', 'debug': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'partial_parse': 'True', 'printer_width': '80', 'introspect': 'True', 'indirect_selection': 'eager', 'version_check': 'True', 'profiles_dir': '.', 'cache_selected_only': 'False', 'warn_error': 'None', 'no_print': 'None', 'log_cache_events': 'False', 'send_anonymous_usage_stats': 'True', 'write_json': 'True', 'quiet': 'False'}
+[0m14:11:08.275556 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '7527229b-8ae0-4945-b34a-a2a7e11fbc05', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10894d940>]}
+[0m14:11:08.304602 [debug] [MainThread]: Set downloads directory='/var/folders/3f/2_5h5tw15552syq1ng5v52h00000gn/T/dbt-downloads-cvxcpudv'
+[0m14:11:08.304854 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m14:11:08.567189 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m14:11:08.567955 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m14:11:08.707947 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m14:11:08.717474 [info ] [MainThread]: Updating lock file in file path: /Users/r0ebot/Projects/bluesky-lakehouse/analytics/package-lock.yml
+[0m14:11:08.719508 [debug] [MainThread]: Set downloads directory='/var/folders/3f/2_5h5tw15552syq1ng5v52h00000gn/T/dbt-downloads-tryf8a13'
+[0m14:11:08.721642 [info ] [MainThread]: Installing dbt-labs/dbt_utils
+[0m14:11:09.394456 [info ] [MainThread]: Installed from version 1.2.0
+[0m14:11:09.394728 [info ] [MainThread]: Updated version available: 1.3.3
+[0m14:11:09.394908 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': '7527229b-8ae0-4945-b34a-a2a7e11fbc05', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10972f8a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10972f130>]}
+[0m14:11:09.395091 [info ] [MainThread]: 
+[0m14:11:09.395232 [info ] [MainThread]: Updates available for packages: ['dbt-labs/dbt_utils']                 
+Update your versions in packages.yml, then run dbt deps
+[0m14:11:09.417388 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 1.23324, "process_in_blocks": "0", "process_kernel_time": 0.292236, "process_mem_max_rss": "150601728", "process_out_blocks": "0", "process_user_time": 1.174472}
+[0m14:11:09.417728 [debug] [MainThread]: Command `dbt deps` succeeded at 14:11:09.417667 after 1.23 seconds
+[0m14:11:09.417989 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109914650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109a3f980>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109a3fb60>]}
+[0m14:11:09.418164 [debug] [MainThread]: Flushing usage events
+[0m14:11:09.908110 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:11:17.203096 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ac3a3c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10bdb3750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10bdb3b10>]}
+
+
+============================== 14:11:17.205188 | dcc001d7-8968-4439-b518-bf5c3232bec1 ==============================
+[0m14:11:17.205188 [info ] [MainThread]: Running with dbt=1.11.11
+[0m14:11:17.205438 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'cache_selected_only': 'False', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'use_experimental_parser': 'False', 'log_path': '/Users/r0ebot/Projects/bluesky-lakehouse/analytics/logs', 'quiet': 'False', 'warn_error': 'None', 'empty': 'None', 'static_parser': 'True', 'target_path': 'None', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'partial_parse': 'True', 'write_json': 'True', 'use_colors': 'True', 'printer_width': '80', 'profiles_dir': '.', 'log_format': 'default', 'fail_fast': 'False', 'debug': 'False', 'no_print': 'None', 'send_anonymous_usage_stats': 'True', 'invocation_command': 'dbt debug'}
+[0m14:11:17.213757 [info ] [MainThread]: dbt version: 1.11.11
+[0m14:11:17.213920 [info ] [MainThread]: python version: 3.13.12
+[0m14:11:17.214012 [info ] [MainThread]: python path: /Users/r0ebot/Projects/bluesky-lakehouse/.venv/bin/python3
+[0m14:11:17.214093 [info ] [MainThread]: os info: macOS-26.4.1-arm64-arm-64bit-Mach-O
+[0m14:11:18.013378 [info ] [MainThread]: Using profiles dir at .
+[0m14:11:18.013663 [info ] [MainThread]: Using profiles.yml file at ./profiles.yml
+[0m14:11:18.013775 [info ] [MainThread]: Using dbt_project.yml file at /Users/r0ebot/Projects/bluesky-lakehouse/analytics/dbt_project.yml
+[0m14:11:18.014818 [info ] [MainThread]: adapter type: duckdb
+[0m14:11:18.014975 [info ] [MainThread]: adapter version: 1.10.1
+[0m14:11:18.049530 [info ] [MainThread]: Configuration:
+[0m14:11:18.049711 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m14:11:18.049804 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m14:11:18.049885 [info ] [MainThread]: Required dependencies:
+[0m14:11:18.050028 [debug] [MainThread]: Executing "git --help"
+[0m14:11:18.060025 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m14:11:18.060366 [debug] [MainThread]: STDERR: "b''"
+[0m14:11:18.060491 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m14:11:18.060596 [info ] [MainThread]: Connection:
+[0m14:11:18.060723 [info ] [MainThread]:   database: analytics
+[0m14:11:18.060808 [info ] [MainThread]:   schema: main
+[0m14:11:18.060885 [info ] [MainThread]:   path: analytics.duckdb
+[0m14:11:18.060960 [info ] [MainThread]:   config_options: None
+[0m14:11:18.061037 [info ] [MainThread]:   extensions: ['httpfs', 'iceberg']
+[0m14:11:18.061112 [info ] [MainThread]:   settings: {'s3_region': 'us-east-1', 's3_access_key_id': 'minio', 's3_secret_access_key': 'minio123', 's3_endpoint': 'localhost:9000', 's3_use_ssl': False, 's3_url_style': 'path'}
+[0m14:11:18.061192 [info ] [MainThread]:   external_root: .
+[0m14:11:18.061264 [info ] [MainThread]:   use_credential_provider: None
+[0m14:11:18.061336 [info ] [MainThread]:   attach: None
+[0m14:11:18.061404 [info ] [MainThread]:   filesystems: None
+[0m14:11:18.061473 [info ] [MainThread]:   remote: None
+[0m14:11:18.061542 [info ] [MainThread]:   plugins: None
+[0m14:11:18.061610 [info ] [MainThread]:   disable_transactions: False
+[0m14:11:18.061821 [info ] [MainThread]: Registered adapter: duckdb=1.10.1
+[0m14:11:18.092589 [debug] [MainThread]: Acquiring new duckdb connection 'debug'
+[0m14:11:18.119134 [debug] [MainThread]: Using duckdb connection "debug"
+[0m14:11:18.119300 [debug] [MainThread]: On debug: select 1 as id
+[0m14:11:18.119398 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m14:11:22.258747 [debug] [MainThread]: SQL status: OK in 4.139 seconds
+[0m14:11:22.259899 [debug] [MainThread]: On debug: Close
+[0m14:11:22.260286 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m14:11:22.260575 [info ] [MainThread]: [32mAll checks passed![0m
+[0m14:11:22.263935 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": true, "command_wall_clock_time": 5.088655, "process_in_blocks": "0", "process_kernel_time": 0.215617, "process_mem_max_rss": "291930112", "process_out_blocks": "0", "process_user_time": 2.09362}
+[0m14:11:22.264445 [debug] [MainThread]: Command `dbt debug` succeeded at 14:11:22.264348 after 5.09 seconds
+[0m14:11:22.264721 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m14:11:22.265012 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c0a16e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c08af90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10beca250>]}
+[0m14:11:22.265347 [debug] [MainThread]: Flushing usage events
+[0m14:11:22.798449 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:11:42.385813 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c9323c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10dac34d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10dac3750>]}
+
+
+============================== 14:11:42.387370 | 847cecf7-e241-4a8f-b402-bc0c0c5b4a5b ==============================
+[0m14:11:42.387370 [info ] [MainThread]: Running with dbt=1.11.11
+[0m14:11:42.387587 [debug] [MainThread]: running dbt with arguments {'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'static_parser': 'True', 'cache_selected_only': 'False', 'empty': 'False', 'partial_parse': 'True', 'invocation_command': 'dbt run', 'no_print': 'None', 'profiles_dir': '.', 'log_cache_events': 'False', 'use_experimental_parser': 'False', 'log_path': '/Users/r0ebot/Projects/bluesky-lakehouse/analytics/logs', 'introspect': 'True', 'debug': 'False', 'write_json': 'True', 'log_format': 'default', 'target_path': 'None', 'indirect_selection': 'eager', 'quiet': 'False', 'warn_error': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m14:11:42.460106 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '847cecf7-e241-4a8f-b402-bc0c0c5b4a5b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10cdd56e0>]}
+[0m14:11:42.480851 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '847cecf7-e241-4a8f-b402-bc0c0c5b4a5b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10dbb1040>]}
+[0m14:11:42.481628 [info ] [MainThread]: Registered adapter: duckdb=1.10.1
+[0m14:11:42.519256 [debug] [MainThread]: checksum: 30a8cc8fdcbf66701b0944d4ccce3fa46dd04b61e5df68b9f16d57b2e0e3f0be, vars: {}, profile: , target: , version: 1.11.11
+[0m14:11:42.519625 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m14:11:42.519756 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '847cecf7-e241-4a8f-b402-bc0c0c5b4a5b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10dbaf950>]}
+[0m14:11:42.972088 [warn ] [MainThread]: [[33mWARNING[0m][MissingArgumentsPropertyInGenericTestDeprecation]: Deprecated
+functionality
+Found top-level arguments to test `dbt_utils.expression_is_true` defined on
+'fct_posts_hourly' in package 'bluesky_lakehouse'
+(models/marts/fct_posts_hourly.yml). Arguments to generic tests should be nested
+under the `arguments` property.
+[0m14:11:42.972299 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '847cecf7-e241-4a8f-b402-bc0c0c5b4a5b', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a5e3e30>]}
+[0m14:11:43.016990 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '847cecf7-e241-4a8f-b402-bc0c0c5b4a5b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e0f2eb0>]}
+[0m14:11:43.048552 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/r0ebot/Projects/bluesky-lakehouse/analytics/target/manifest.json
+[0m14:11:43.049502 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/r0ebot/Projects/bluesky-lakehouse/analytics/target/semantic_manifest.json
+[0m14:11:43.059509 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '847cecf7-e241-4a8f-b402-bc0c0c5b4a5b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e0de410>]}
+[0m14:11:43.059681 [info ] [MainThread]: Found 3 models, 7 data tests, 1 source, 601 macros
+[0m14:11:43.059788 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '847cecf7-e241-4a8f-b402-bc0c0c5b4a5b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e2da990>]}
+[0m14:11:43.060423 [info ] [MainThread]: 
+[0m14:11:43.060539 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m14:11:43.060622 [info ] [MainThread]: 
+[0m14:11:43.060775 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m14:11:43.062281 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_analytics'
+[0m14:11:43.080648 [debug] [ThreadPool]: Using duckdb connection "list_analytics"
+[0m14:11:43.080800 [debug] [ThreadPool]: On list_analytics: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "bluesky_lakehouse", "target_name": "dev", "connection_name": "list_analytics"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"analytics"'
+    
+  
+  
+[0m14:11:43.080906 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:11:43.115318 [debug] [ThreadPool]: SQL status: OK in 0.034 seconds
+[0m14:11:43.115854 [debug] [ThreadPool]: On list_analytics: Close
+[0m14:11:43.116105 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_analytics, now create_analytics_main)
+[0m14:11:43.116256 [debug] [ThreadPool]: Creating schema "database: "analytics"
+schema: "main"
+"
+[0m14:11:43.118507 [debug] [ThreadPool]: Using duckdb connection "create_analytics_main"
+[0m14:11:43.118614 [debug] [ThreadPool]: On create_analytics_main: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "bluesky_lakehouse", "target_name": "dev", "connection_name": "create_analytics_main"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='analytics'
+        and type='sqlite'
+    
+  
+[0m14:11:43.118697 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m14:11:43.119236 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m14:11:43.119681 [debug] [ThreadPool]: Using duckdb connection "create_analytics_main"
+[0m14:11:43.119787 [debug] [ThreadPool]: On create_analytics_main: BEGIN
+[0m14:11:43.119947 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m14:11:43.120033 [debug] [ThreadPool]: Using duckdb connection "create_analytics_main"
+[0m14:11:43.120111 [debug] [ThreadPool]: On create_analytics_main: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "bluesky_lakehouse", "target_name": "dev", "connection_name": "create_analytics_main"} */
+
+    
+    
+        create schema if not exists "analytics"."main"
+    
+[0m14:11:43.120276 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m14:11:43.120512 [debug] [ThreadPool]: On create_analytics_main: COMMIT
+[0m14:11:43.120603 [debug] [ThreadPool]: Using duckdb connection "create_analytics_main"
+[0m14:11:43.120688 [debug] [ThreadPool]: On create_analytics_main: COMMIT
+[0m14:11:43.120825 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m14:11:43.120950 [debug] [ThreadPool]: On create_analytics_main: Close
+[0m14:11:43.121372 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_analytics_main, now list_analytics_main)
+[0m14:11:43.123301 [debug] [ThreadPool]: Using duckdb connection "list_analytics_main"
+[0m14:11:43.123415 [debug] [ThreadPool]: On list_analytics_main: BEGIN
+[0m14:11:43.123563 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m14:11:43.123983 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m14:11:43.124076 [debug] [ThreadPool]: Using duckdb connection "list_analytics_main"
+[0m14:11:43.124166 [debug] [ThreadPool]: On list_analytics_main: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "bluesky_lakehouse", "target_name": "dev", "connection_name": "list_analytics_main"} */
+select
+      'analytics' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'analytics'
+  
+[0m14:11:43.125290 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m14:11:43.125639 [debug] [ThreadPool]: On list_analytics_main: ROLLBACK
+[0m14:11:43.128272 [debug] [ThreadPool]: Failed to rollback 'list_analytics_main'
+[0m14:11:43.128376 [debug] [ThreadPool]: On list_analytics_main: Close
+[0m14:11:43.128562 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '847cecf7-e241-4a8f-b402-bc0c0c5b4a5b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e5371d0>]}
+[0m14:11:43.128714 [debug] [MainThread]: Using duckdb connection "master"
+[0m14:11:43.128798 [debug] [MainThread]: On master: BEGIN
+[0m14:11:43.128877 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m14:11:43.129261 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m14:11:43.129387 [debug] [MainThread]: On master: COMMIT
+[0m14:11:43.129483 [debug] [MainThread]: Using duckdb connection "master"
+[0m14:11:43.129563 [debug] [MainThread]: On master: COMMIT
+[0m14:11:43.129683 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m14:11:43.129764 [debug] [MainThread]: On master: Close
+[0m14:11:43.130773 [debug] [Thread-1 (]: Began running node model.bluesky_lakehouse.stg_posts
+[0m14:11:43.130950 [info ] [Thread-1 (]: 1 of 3 START sql view model main.stg_posts ..................................... [RUN]
+[0m14:11:43.131086 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_analytics_main, now model.bluesky_lakehouse.stg_posts)
+[0m14:11:43.131187 [debug] [Thread-1 (]: Began compiling node model.bluesky_lakehouse.stg_posts
+[0m14:11:43.133670 [debug] [Thread-1 (]: Writing injected SQL for node "model.bluesky_lakehouse.stg_posts"
+[0m14:11:43.134042 [debug] [Thread-1 (]: Began executing node model.bluesky_lakehouse.stg_posts
+[0m14:11:43.143823 [debug] [Thread-1 (]: Writing runtime sql for node "model.bluesky_lakehouse.stg_posts"
+[0m14:11:43.144215 [debug] [Thread-1 (]: Using duckdb connection "model.bluesky_lakehouse.stg_posts"
+[0m14:11:43.144322 [debug] [Thread-1 (]: On model.bluesky_lakehouse.stg_posts: BEGIN
+[0m14:11:43.144416 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:11:43.144852 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m14:11:43.144950 [debug] [Thread-1 (]: Using duckdb connection "model.bluesky_lakehouse.stg_posts"
+[0m14:11:43.145046 [debug] [Thread-1 (]: On model.bluesky_lakehouse.stg_posts: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "bluesky_lakehouse", "target_name": "dev", "node_id": "model.bluesky_lakehouse.stg_posts"} */
+
+  
+  create view "analytics"."main"."stg_posts__dbt_tmp" as (
+    -- analytics/models/staging/stg_posts.sql
+-- Read from Iceberg via DuckDB iceberg_scan. Light cleanup:
+--   - filter out harness test markers
+--   - filter out null text
+--   - add text_length derived column
+
+
+
+SELECT
+    did,
+    time_us,
+    event_time,
+    text,
+    primary_lang,
+    created_at,
+    LENGTH(text) AS text_length
+FROM iceberg_scan(
+    's3://lakehouse/warehouse/bsky/posts',
+    allow_moved_paths = true
+)
+WHERE text IS NOT NULL
+  AND did NOT LIKE 'harness:%'
+  );
+
+[0m14:11:43.152536 [debug] [Thread-1 (]: DuckDB adapter: duckdb error: Failed to read iceberg table. No version was provided and no version-hint could be found, globbing the filesystem to locate the latest version is disabled by default as this is considered unsafe and could result in reading uncommitted data. To enable this use 'SET unsafe_enable_version_guessing = true;'
+
+LINE 21: FROM iceberg_scan(
+              ^
+[0m14:11:43.152695 [debug] [Thread-1 (]: DuckDB adapter: Error running SQL: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "bluesky_lakehouse", "target_name": "dev", "node_id": "model.bluesky_lakehouse.stg_posts"} */
+
+  
+  create view "analytics"."main"."stg_posts__dbt_tmp" as (
+    -- analytics/models/staging/stg_posts.sql
+-- Read from Iceberg via DuckDB iceberg_scan. Light cleanup:
+--   - filter out harness test markers
+--   - filter out null text
+--   - add text_length derived column
+
+
+
+SELECT
+    did,
+    time_us,
+    event_time,
+    text,
+    primary_lang,
+    created_at,
+    LENGTH(text) AS text_length
+FROM iceberg_scan(
+    's3://lakehouse/warehouse/bsky/posts',
+    allow_moved_paths = true
+)
+WHERE text IS NOT NULL
+  AND did NOT LIKE 'harness:%'
+  );
+
+[0m14:11:43.152811 [debug] [Thread-1 (]: DuckDB adapter: Rolling back transaction.
+[0m14:11:43.152911 [debug] [Thread-1 (]: On model.bluesky_lakehouse.stg_posts: ROLLBACK
+[0m14:11:43.153511 [debug] [Thread-1 (]: Failed to rollback 'model.bluesky_lakehouse.stg_posts'
+[0m14:11:43.153677 [debug] [Thread-1 (]: On model.bluesky_lakehouse.stg_posts: Close
+[0m14:11:43.156962 [debug] [Thread-1 (]: Runtime Error in model stg_posts (models/staging/stg_posts.sql)
+  Failed to read iceberg table. No version was provided and no version-hint could be found, globbing the filesystem to locate the latest version is disabled by default as this is considered unsafe and could result in reading uncommitted data. To enable this use 'SET unsafe_enable_version_guessing = true;'
+  
+  LINE 21: FROM iceberg_scan(
+                ^
+[0m14:11:43.157957 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '847cecf7-e241-4a8f-b402-bc0c0c5b4a5b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10cd62530>]}
+[0m14:11:43.158196 [error] [Thread-1 (]: 1 of 3 ERROR creating sql view model main.stg_posts ............................ [[31mERROR[0m in 0.03s]
+[0m14:11:43.158371 [debug] [Thread-1 (]: Finished running node model.bluesky_lakehouse.stg_posts
+[0m14:11:43.158526 [debug] [Thread-4 (]: Marking all children of 'model.bluesky_lakehouse.stg_posts' to be skipped because of status 'error'.  Reason: Runtime Error in model stg_posts (models/staging/stg_posts.sql)
+  Failed to read iceberg table. No version was provided and no version-hint could be found, globbing the filesystem to locate the latest version is disabled by default as this is considered unsafe and could result in reading uncommitted data. To enable this use 'SET unsafe_enable_version_guessing = true;'
+  
+  LINE 21: FROM iceberg_scan(
+                ^.
+[0m14:11:43.158994 [debug] [Thread-1 (]: Began running node model.bluesky_lakehouse.dim_languages
+[0m14:11:43.159166 [info ] [Thread-1 (]: 2 of 3 SKIP relation main.dim_languages ........................................ [[33mSKIP[0m]
+[0m14:11:43.159335 [debug] [Thread-1 (]: Finished running node model.bluesky_lakehouse.dim_languages
+[0m14:11:43.159459 [debug] [Thread-1 (]: Began running node model.bluesky_lakehouse.fct_posts_hourly
+[0m14:11:43.159596 [info ] [Thread-1 (]: 3 of 3 SKIP relation main.fct_posts_hourly ..................................... [[33mSKIP[0m]
+[0m14:11:43.159714 [debug] [Thread-1 (]: Finished running node model.bluesky_lakehouse.fct_posts_hourly
+[0m14:11:43.160072 [debug] [MainThread]: Using duckdb connection "master"
+[0m14:11:43.160171 [debug] [MainThread]: On master: BEGIN
+[0m14:11:43.160251 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m14:11:43.160656 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m14:11:43.160754 [debug] [MainThread]: On master: COMMIT
+[0m14:11:43.160834 [debug] [MainThread]: Using duckdb connection "master"
+[0m14:11:43.160910 [debug] [MainThread]: On master: COMMIT
+[0m14:11:43.161058 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m14:11:43.161147 [debug] [MainThread]: On master: Close
+[0m14:11:43.161249 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m14:11:43.161326 [debug] [MainThread]: Connection 'model.bluesky_lakehouse.stg_posts' was properly closed.
+[0m14:11:43.161426 [info ] [MainThread]: 
+[0m14:11:43.161520 [info ] [MainThread]: Finished running 2 table models, 1 view model in 0 hours 0 minutes and 0.10 seconds (0.10s).
+[0m14:11:43.161734 [debug] [MainThread]: Command end result
+[0m14:11:43.174358 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/r0ebot/Projects/bluesky-lakehouse/analytics/target/manifest.json
+[0m14:11:43.175194 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/r0ebot/Projects/bluesky-lakehouse/analytics/target/semantic_manifest.json
+[0m14:11:43.177092 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/r0ebot/Projects/bluesky-lakehouse/analytics/target/run_results.json
+[0m14:11:43.177197 [info ] [MainThread]: 
+[0m14:11:43.177305 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m14:11:43.177396 [info ] [MainThread]: 
+[0m14:11:43.177500 [error] [MainThread]: [31mFailure in model stg_posts (models/staging/stg_posts.sql)[0m
+[0m14:11:43.177604 [error] [MainThread]:   Runtime Error in model stg_posts (models/staging/stg_posts.sql)
+  Failed to read iceberg table. No version was provided and no version-hint could be found, globbing the filesystem to locate the latest version is disabled by default as this is considered unsafe and could result in reading uncommitted data. To enable this use 'SET unsafe_enable_version_guessing = true;'
+  
+  LINE 21: FROM iceberg_scan(
+                ^
+[0m14:11:43.177683 [info ] [MainThread]: 
+[0m14:11:43.177775 [info ] [MainThread]:   compiled code at target/compiled/bluesky_lakehouse/models/staging/stg_posts.sql
+[0m14:11:43.177856 [info ] [MainThread]: 
+[0m14:11:43.177942 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=2 NO-OP=0 TOTAL=3
+[0m14:11:43.178101 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- MissingArgumentsPropertyInGenericTestDeprecation: 1 occurrence
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m14:11:43.179140 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.81785524, "process_in_blocks": "0", "process_kernel_time": 0.140316, "process_mem_max_rss": "177274880", "process_out_blocks": "0", "process_user_time": 1.284029}
+[0m14:11:43.179285 [debug] [MainThread]: Command `dbt run` failed at 14:11:43.179260 after 0.82 seconds
+[0m14:11:43.179407 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e45a350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e405950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10db918d0>]}
+[0m14:11:43.179515 [debug] [MainThread]: Flushing usage events
+[0m14:11:43.689450 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:12:01.250999 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c6463c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d7d34d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d7d3750>]}
+
+
+============================== 14:12:01.252993 | 82f61a2e-72e7-4022-b5b0-f46fe0b7e057 ==============================
+[0m14:12:01.252993 [info ] [MainThread]: Running with dbt=1.11.11
+[0m14:12:01.253245 [debug] [MainThread]: running dbt with arguments {'target_path': 'None', 'use_colors': 'True', 'write_json': 'True', 'static_parser': 'True', 'invocation_command': 'dbt run', 'send_anonymous_usage_stats': 'True', 'log_cache_events': 'False', 'introspect': 'True', 'log_format': 'default', 'cache_selected_only': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'indirect_selection': 'eager', 'profiles_dir': '.', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'use_experimental_parser': 'False', 'empty': 'False', 'version_check': 'True', 'debug': 'False', 'printer_width': '80', 'log_path': '/Users/r0ebot/Projects/bluesky-lakehouse/analytics/logs', 'warn_error': 'None', 'quiet': 'False', 'no_print': 'None'}
+[0m14:12:01.379488 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '82f61a2e-72e7-4022-b5b0-f46fe0b7e057', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10cae96e0>]}
+[0m14:12:01.399265 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '82f61a2e-72e7-4022-b5b0-f46fe0b7e057', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d8c5040>]}
+[0m14:12:01.400257 [info ] [MainThread]: Registered adapter: duckdb=1.10.1
+[0m14:12:01.437791 [debug] [MainThread]: checksum: 30a8cc8fdcbf66701b0944d4ccce3fa46dd04b61e5df68b9f16d57b2e0e3f0be, vars: {}, profile: , target: , version: 1.11.11
+[0m14:12:01.472104 [info ] [MainThread]: Unable to do partial parsing because profile has changed
+[0m14:12:01.472294 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '82f61a2e-72e7-4022-b5b0-f46fe0b7e057', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10dc63050>]}
+[0m14:12:01.962281 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '82f61a2e-72e7-4022-b5b0-f46fe0b7e057', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10de845f0>]}
+[0m14:12:01.991476 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/r0ebot/Projects/bluesky-lakehouse/analytics/target/manifest.json
+[0m14:12:01.992413 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/r0ebot/Projects/bluesky-lakehouse/analytics/target/semantic_manifest.json
+[0m14:12:01.996769 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '82f61a2e-72e7-4022-b5b0-f46fe0b7e057', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e216430>]}
+[0m14:12:01.996932 [info ] [MainThread]: Found 3 models, 7 data tests, 1 source, 601 macros
+[0m14:12:01.997039 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '82f61a2e-72e7-4022-b5b0-f46fe0b7e057', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10dd05160>]}
+[0m14:12:01.997679 [info ] [MainThread]: 
+[0m14:12:01.997798 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m14:12:01.997883 [info ] [MainThread]: 
+[0m14:12:01.998029 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m14:12:01.999518 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_analytics'
+[0m14:12:02.019147 [debug] [ThreadPool]: Using duckdb connection "list_analytics"
+[0m14:12:02.019313 [debug] [ThreadPool]: On list_analytics: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "bluesky_lakehouse", "target_name": "dev", "connection_name": "list_analytics"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"analytics"'
+    
+  
+  
+[0m14:12:02.019410 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:12:02.084650 [debug] [ThreadPool]: SQL status: OK in 0.065 seconds
+[0m14:12:02.085495 [debug] [ThreadPool]: On list_analytics: Close
+[0m14:12:02.085759 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_analytics, now create_analytics_main)
+[0m14:12:02.085906 [debug] [ThreadPool]: Creating schema "database: "analytics"
+schema: "main"
+"
+[0m14:12:02.088123 [debug] [ThreadPool]: Using duckdb connection "create_analytics_main"
+[0m14:12:02.088237 [debug] [ThreadPool]: On create_analytics_main: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "bluesky_lakehouse", "target_name": "dev", "connection_name": "create_analytics_main"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='analytics'
+        and type='sqlite'
+    
+  
+[0m14:12:02.088323 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m14:12:02.088944 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m14:12:02.089345 [debug] [ThreadPool]: Using duckdb connection "create_analytics_main"
+[0m14:12:02.089431 [debug] [ThreadPool]: On create_analytics_main: BEGIN
+[0m14:12:02.089564 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m14:12:02.089685 [debug] [ThreadPool]: Using duckdb connection "create_analytics_main"
+[0m14:12:02.089776 [debug] [ThreadPool]: On create_analytics_main: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "bluesky_lakehouse", "target_name": "dev", "connection_name": "create_analytics_main"} */
+
+    
+    
+        create schema if not exists "analytics"."main"
+    
+[0m14:12:02.090223 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m14:12:02.090503 [debug] [ThreadPool]: On create_analytics_main: COMMIT
+[0m14:12:02.090602 [debug] [ThreadPool]: Using duckdb connection "create_analytics_main"
+[0m14:12:02.090684 [debug] [ThreadPool]: On create_analytics_main: COMMIT
+[0m14:12:02.090805 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m14:12:02.090888 [debug] [ThreadPool]: On create_analytics_main: Close
+[0m14:12:02.091278 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_analytics_main, now list_analytics_main)
+[0m14:12:02.093235 [debug] [ThreadPool]: Using duckdb connection "list_analytics_main"
+[0m14:12:02.093339 [debug] [ThreadPool]: On list_analytics_main: BEGIN
+[0m14:12:02.093415 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m14:12:02.093734 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m14:12:02.093816 [debug] [ThreadPool]: Using duckdb connection "list_analytics_main"
+[0m14:12:02.093899 [debug] [ThreadPool]: On list_analytics_main: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "bluesky_lakehouse", "target_name": "dev", "connection_name": "list_analytics_main"} */
+select
+      'analytics' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'analytics'
+  
+[0m14:12:02.095853 [debug] [ThreadPool]: SQL status: OK in 0.002 seconds
+[0m14:12:02.096232 [debug] [ThreadPool]: On list_analytics_main: ROLLBACK
+[0m14:12:02.096925 [debug] [ThreadPool]: Failed to rollback 'list_analytics_main'
+[0m14:12:02.097022 [debug] [ThreadPool]: On list_analytics_main: Close
+[0m14:12:02.097392 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '82f61a2e-72e7-4022-b5b0-f46fe0b7e057', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10dff5b50>]}
+[0m14:12:02.097582 [debug] [MainThread]: Using duckdb connection "master"
+[0m14:12:02.097679 [debug] [MainThread]: On master: BEGIN
+[0m14:12:02.097767 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m14:12:02.098213 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m14:12:02.098306 [debug] [MainThread]: On master: COMMIT
+[0m14:12:02.098384 [debug] [MainThread]: Using duckdb connection "master"
+[0m14:12:02.098456 [debug] [MainThread]: On master: COMMIT
+[0m14:12:02.098566 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m14:12:02.098646 [debug] [MainThread]: On master: Close
+[0m14:12:02.099561 [debug] [Thread-1 (]: Began running node model.bluesky_lakehouse.stg_posts
+[0m14:12:02.099726 [info ] [Thread-1 (]: 1 of 3 START sql view model main.stg_posts ..................................... [RUN]
+[0m14:12:02.099868 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_analytics_main, now model.bluesky_lakehouse.stg_posts)
+[0m14:12:02.099969 [debug] [Thread-1 (]: Began compiling node model.bluesky_lakehouse.stg_posts
+[0m14:12:02.102219 [debug] [Thread-1 (]: Writing injected SQL for node "model.bluesky_lakehouse.stg_posts"
+[0m14:12:02.102444 [debug] [Thread-1 (]: Began executing node model.bluesky_lakehouse.stg_posts
+[0m14:12:02.111898 [debug] [Thread-1 (]: Writing runtime sql for node "model.bluesky_lakehouse.stg_posts"
+[0m14:12:02.112185 [debug] [Thread-1 (]: Using duckdb connection "model.bluesky_lakehouse.stg_posts"
+[0m14:12:02.112295 [debug] [Thread-1 (]: On model.bluesky_lakehouse.stg_posts: BEGIN
+[0m14:12:02.112387 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:12:02.112857 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m14:12:02.112983 [debug] [Thread-1 (]: Using duckdb connection "model.bluesky_lakehouse.stg_posts"
+[0m14:12:02.113096 [debug] [Thread-1 (]: On model.bluesky_lakehouse.stg_posts: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "bluesky_lakehouse", "target_name": "dev", "node_id": "model.bluesky_lakehouse.stg_posts"} */
+
+  
+  create view "analytics"."main"."stg_posts__dbt_tmp" as (
+    -- analytics/models/staging/stg_posts.sql
+-- Read from Iceberg via DuckDB iceberg_scan. Light cleanup:
+--   - filter out harness test markers
+--   - filter out null text
+--   - add text_length derived column
+
+
+
+SELECT
+    did,
+    time_us,
+    event_time,
+    text,
+    primary_lang,
+    created_at,
+    LENGTH(text) AS text_length
+FROM iceberg_scan(
+    's3://lakehouse/warehouse/bsky/posts',
+    allow_moved_paths = true
+)
+WHERE text IS NOT NULL
+  AND did NOT LIKE 'harness:%'
+  );
+
+[0m14:12:02.148552 [debug] [Thread-1 (]: SQL status: OK in 0.035 seconds
+[0m14:12:02.151174 [debug] [Thread-1 (]: Using duckdb connection "model.bluesky_lakehouse.stg_posts"
+[0m14:12:02.151315 [debug] [Thread-1 (]: On model.bluesky_lakehouse.stg_posts: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "bluesky_lakehouse", "target_name": "dev", "node_id": "model.bluesky_lakehouse.stg_posts"} */
+alter view "analytics"."main"."stg_posts__dbt_tmp" rename to "stg_posts"
+[0m14:12:02.151907 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m14:12:02.155657 [debug] [Thread-1 (]: On model.bluesky_lakehouse.stg_posts: COMMIT
+[0m14:12:02.155796 [debug] [Thread-1 (]: Using duckdb connection "model.bluesky_lakehouse.stg_posts"
+[0m14:12:02.155893 [debug] [Thread-1 (]: On model.bluesky_lakehouse.stg_posts: COMMIT
+[0m14:12:02.156716 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m14:12:02.158638 [debug] [Thread-1 (]: Using duckdb connection "model.bluesky_lakehouse.stg_posts"
+[0m14:12:02.158777 [debug] [Thread-1 (]: On model.bluesky_lakehouse.stg_posts: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "bluesky_lakehouse", "target_name": "dev", "node_id": "model.bluesky_lakehouse.stg_posts"} */
+
+      drop view if exists "analytics"."main"."stg_posts__dbt_backup" cascade
+    
+[0m14:12:02.158971 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m14:12:02.159758 [debug] [Thread-1 (]: On model.bluesky_lakehouse.stg_posts: Close
+[0m14:12:02.160494 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '82f61a2e-72e7-4022-b5b0-f46fe0b7e057', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10dfd9ff0>]}
+[0m14:12:02.160718 [info ] [Thread-1 (]: 1 of 3 OK created sql view model main.stg_posts ................................ [[32mOK[0m in 0.06s]
+[0m14:12:02.160884 [debug] [Thread-1 (]: Finished running node model.bluesky_lakehouse.stg_posts
+[0m14:12:02.161178 [debug] [Thread-1 (]: Began running node model.bluesky_lakehouse.dim_languages
+[0m14:12:02.161362 [info ] [Thread-1 (]: 2 of 3 START sql table model main.dim_languages ................................ [RUN]
+[0m14:12:02.161507 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.bluesky_lakehouse.stg_posts, now model.bluesky_lakehouse.dim_languages)
+[0m14:12:02.161610 [debug] [Thread-1 (]: Began compiling node model.bluesky_lakehouse.dim_languages
+[0m14:12:02.162668 [debug] [Thread-1 (]: Writing injected SQL for node "model.bluesky_lakehouse.dim_languages"
+[0m14:12:02.162931 [debug] [Thread-1 (]: Began executing node model.bluesky_lakehouse.dim_languages
+[0m14:12:02.168915 [debug] [Thread-1 (]: Writing runtime sql for node "model.bluesky_lakehouse.dim_languages"
+[0m14:12:02.169181 [debug] [Thread-1 (]: Using duckdb connection "model.bluesky_lakehouse.dim_languages"
+[0m14:12:02.169283 [debug] [Thread-1 (]: On model.bluesky_lakehouse.dim_languages: BEGIN
+[0m14:12:02.169378 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:12:02.169868 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m14:12:02.169974 [debug] [Thread-1 (]: Using duckdb connection "model.bluesky_lakehouse.dim_languages"
+[0m14:12:02.170072 [debug] [Thread-1 (]: On model.bluesky_lakehouse.dim_languages: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "bluesky_lakehouse", "target_name": "dev", "node_id": "model.bluesky_lakehouse.dim_languages"} */
+
+  
+    
+    
+
+    create  table
+      "analytics"."main"."dim_languages__dbt_tmp"
+  
+    as (
+      -- analytics/models/marts/dim_languages.sql
+-- Language dimension: first/last seen, total posts, distinct users.
+
+
+
+SELECT
+    primary_lang                AS lang_code,
+    MIN(event_time)             AS first_seen,
+    MAX(event_time)             AS last_seen,
+    COUNT(*)                    AS total_posts,
+    COUNT(DISTINCT did)         AS distinct_users
+FROM "analytics"."main"."stg_posts"
+WHERE primary_lang IS NOT NULL
+GROUP BY primary_lang
+    );
+  
+  
+[0m14:12:02.238424 [debug] [Thread-1 (]: SQL status: OK in 0.068 seconds
+[0m14:12:02.239801 [debug] [Thread-1 (]: Using duckdb connection "model.bluesky_lakehouse.dim_languages"
+[0m14:12:02.240020 [debug] [Thread-1 (]: On model.bluesky_lakehouse.dim_languages: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "bluesky_lakehouse", "target_name": "dev", "node_id": "model.bluesky_lakehouse.dim_languages"} */
+alter table "analytics"."main"."dim_languages__dbt_tmp" rename to "dim_languages"
+[0m14:12:02.240315 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m14:12:02.242016 [debug] [Thread-1 (]: On model.bluesky_lakehouse.dim_languages: COMMIT
+[0m14:12:02.242138 [debug] [Thread-1 (]: Using duckdb connection "model.bluesky_lakehouse.dim_languages"
+[0m14:12:02.242237 [debug] [Thread-1 (]: On model.bluesky_lakehouse.dim_languages: COMMIT
+[0m14:12:02.242908 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m14:12:02.243647 [debug] [Thread-1 (]: Using duckdb connection "model.bluesky_lakehouse.dim_languages"
+[0m14:12:02.243769 [debug] [Thread-1 (]: On model.bluesky_lakehouse.dim_languages: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "bluesky_lakehouse", "target_name": "dev", "node_id": "model.bluesky_lakehouse.dim_languages"} */
+
+      drop table if exists "analytics"."main"."dim_languages__dbt_backup" cascade
+    
+[0m14:12:02.243944 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m14:12:02.244350 [debug] [Thread-1 (]: On model.bluesky_lakehouse.dim_languages: Close
+[0m14:12:02.244536 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '82f61a2e-72e7-4022-b5b0-f46fe0b7e057', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e68e3f0>]}
+[0m14:12:02.244736 [info ] [Thread-1 (]: 2 of 3 OK created sql table model main.dim_languages ........................... [[32mOK[0m in 0.08s]
+[0m14:12:02.244895 [debug] [Thread-1 (]: Finished running node model.bluesky_lakehouse.dim_languages
+[0m14:12:02.245017 [debug] [Thread-1 (]: Began running node model.bluesky_lakehouse.fct_posts_hourly
+[0m14:12:02.245202 [info ] [Thread-1 (]: 3 of 3 START sql table model main.fct_posts_hourly ............................. [RUN]
+[0m14:12:02.245364 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.bluesky_lakehouse.dim_languages, now model.bluesky_lakehouse.fct_posts_hourly)
+[0m14:12:02.245480 [debug] [Thread-1 (]: Began compiling node model.bluesky_lakehouse.fct_posts_hourly
+[0m14:12:02.246704 [debug] [Thread-1 (]: Writing injected SQL for node "model.bluesky_lakehouse.fct_posts_hourly"
+[0m14:12:02.246984 [debug] [Thread-1 (]: Began executing node model.bluesky_lakehouse.fct_posts_hourly
+[0m14:12:02.247930 [debug] [Thread-1 (]: Writing runtime sql for node "model.bluesky_lakehouse.fct_posts_hourly"
+[0m14:12:02.248154 [debug] [Thread-1 (]: Using duckdb connection "model.bluesky_lakehouse.fct_posts_hourly"
+[0m14:12:02.248259 [debug] [Thread-1 (]: On model.bluesky_lakehouse.fct_posts_hourly: BEGIN
+[0m14:12:02.248349 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:12:02.248861 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m14:12:02.248966 [debug] [Thread-1 (]: Using duckdb connection "model.bluesky_lakehouse.fct_posts_hourly"
+[0m14:12:02.249069 [debug] [Thread-1 (]: On model.bluesky_lakehouse.fct_posts_hourly: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "bluesky_lakehouse", "target_name": "dev", "node_id": "model.bluesky_lakehouse.fct_posts_hourly"} */
+
+  
+    
+    
+
+    create  table
+      "analytics"."main"."fct_posts_hourly__dbt_tmp"
+  
+    as (
+      -- analytics/models/marts/fct_posts_hourly.sql
+-- Hourly post counts per language with rolling 24h totals.
+
+
+
+WITH hourly AS (
+    SELECT
+        DATE_TRUNC('hour', event_time) AS hour_bucket,
+        primary_lang,
+        COUNT(*)                       AS post_count,
+        AVG(text_length)               AS avg_text_length,
+        SUM(CASE WHEN text_length > 200 THEN 1 ELSE 0 END) AS long_posts
+    FROM "analytics"."main"."stg_posts"
+    GROUP BY DATE_TRUNC('hour', event_time), primary_lang
+)
+SELECT
+    hour_bucket,
+    primary_lang,
+    post_count,
+    avg_text_length,
+    long_posts,
+    SUM(post_count) OVER (
+        PARTITION BY primary_lang
+        ORDER BY hour_bucket
+        ROWS BETWEEN 23 PRECEDING AND CURRENT ROW
+    ) AS rolling_24h_count
+FROM hourly
+    );
+  
+  
+[0m14:12:02.268370 [debug] [Thread-1 (]: SQL status: OK in 0.019 seconds
+[0m14:12:02.269662 [debug] [Thread-1 (]: Using duckdb connection "model.bluesky_lakehouse.fct_posts_hourly"
+[0m14:12:02.269783 [debug] [Thread-1 (]: On model.bluesky_lakehouse.fct_posts_hourly: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "bluesky_lakehouse", "target_name": "dev", "node_id": "model.bluesky_lakehouse.fct_posts_hourly"} */
+alter table "analytics"."main"."fct_posts_hourly__dbt_tmp" rename to "fct_posts_hourly"
+[0m14:12:02.270013 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m14:12:02.270489 [debug] [Thread-1 (]: On model.bluesky_lakehouse.fct_posts_hourly: COMMIT
+[0m14:12:02.270600 [debug] [Thread-1 (]: Using duckdb connection "model.bluesky_lakehouse.fct_posts_hourly"
+[0m14:12:02.270693 [debug] [Thread-1 (]: On model.bluesky_lakehouse.fct_posts_hourly: COMMIT
+[0m14:12:02.271088 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m14:12:02.271866 [debug] [Thread-1 (]: Using duckdb connection "model.bluesky_lakehouse.fct_posts_hourly"
+[0m14:12:02.271983 [debug] [Thread-1 (]: On model.bluesky_lakehouse.fct_posts_hourly: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "bluesky_lakehouse", "target_name": "dev", "node_id": "model.bluesky_lakehouse.fct_posts_hourly"} */
+
+      drop table if exists "analytics"."main"."fct_posts_hourly__dbt_backup" cascade
+    
+[0m14:12:02.272169 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m14:12:02.272579 [debug] [Thread-1 (]: On model.bluesky_lakehouse.fct_posts_hourly: Close
+[0m14:12:02.272756 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '82f61a2e-72e7-4022-b5b0-f46fe0b7e057', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e4ff750>]}
+[0m14:12:02.272952 [info ] [Thread-1 (]: 3 of 3 OK created sql table model main.fct_posts_hourly ........................ [[32mOK[0m in 0.03s]
+[0m14:12:02.273109 [debug] [Thread-1 (]: Finished running node model.bluesky_lakehouse.fct_posts_hourly
+[0m14:12:02.273648 [debug] [MainThread]: Using duckdb connection "master"
+[0m14:12:02.273745 [debug] [MainThread]: On master: BEGIN
+[0m14:12:02.273831 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m14:12:02.274278 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m14:12:02.274399 [debug] [MainThread]: On master: COMMIT
+[0m14:12:02.274498 [debug] [MainThread]: Using duckdb connection "master"
+[0m14:12:02.274587 [debug] [MainThread]: On master: COMMIT
+[0m14:12:02.274734 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m14:12:02.274857 [debug] [MainThread]: On master: Close
+[0m14:12:02.274982 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m14:12:02.275067 [debug] [MainThread]: Connection 'model.bluesky_lakehouse.fct_posts_hourly' was properly closed.
+[0m14:12:02.275174 [info ] [MainThread]: 
+[0m14:12:02.275269 [info ] [MainThread]: Finished running 2 table models, 1 view model in 0 hours 0 minutes and 0.28 seconds (0.28s).
+[0m14:12:02.275534 [debug] [MainThread]: Command end result
+[0m14:12:02.288604 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/r0ebot/Projects/bluesky-lakehouse/analytics/target/manifest.json
+[0m14:12:02.289285 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/r0ebot/Projects/bluesky-lakehouse/analytics/target/semantic_manifest.json
+[0m14:12:02.291268 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/r0ebot/Projects/bluesky-lakehouse/analytics/target/run_results.json
+[0m14:12:02.291369 [info ] [MainThread]: 
+[0m14:12:02.291475 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m14:12:02.291558 [info ] [MainThread]: 
+[0m14:12:02.291651 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=3
+[0m14:12:02.293647 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 1.0707818, "process_in_blocks": "0", "process_kernel_time": 0.285023, "process_mem_max_rss": "275038208", "process_out_blocks": "0", "process_user_time": 1.500552}
+[0m14:12:02.293804 [debug] [MainThread]: Command `dbt run` succeeded at 14:12:02.293777 after 1.07 seconds
+[0m14:12:02.293916 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104776350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10dd9a6d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d7e3590>]}
+[0m14:12:02.294027 [debug] [MainThread]: Flushing usage events
+[0m14:12:03.294068 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:12:16.712335 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c0ba3c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d2474d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d247750>]}
+
+
+============================== 14:12:16.714445 | 3c427ae3-ee8a-4fa7-9eaf-9d93c4ea8f26 ==============================
+[0m14:12:16.714445 [info ] [MainThread]: Running with dbt=1.11.11
+[0m14:12:16.714685 [debug] [MainThread]: running dbt with arguments {'profiles_dir': '.', 'warn_error': 'None', 'send_anonymous_usage_stats': 'True', 'no_print': 'None', 'log_cache_events': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'use_experimental_parser': 'False', 'cache_selected_only': 'False', 'printer_width': '80', 'introspect': 'True', 'write_json': 'True', 'log_path': '/Users/r0ebot/Projects/bluesky-lakehouse/analytics/logs', 'use_colors': 'True', 'quiet': 'False', 'empty': 'None', 'static_parser': 'True', 'log_format': 'default', 'indirect_selection': 'eager', 'invocation_command': 'dbt test', 'version_check': 'True'}
+[0m14:12:16.788803 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '3c427ae3-ee8a-4fa7-9eaf-9d93c4ea8f26', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c55d6e0>]}
+[0m14:12:16.809876 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '3c427ae3-ee8a-4fa7-9eaf-9d93c4ea8f26', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d349040>]}
+[0m14:12:16.811134 [info ] [MainThread]: Registered adapter: duckdb=1.10.1
+[0m14:12:16.849175 [debug] [MainThread]: checksum: 30a8cc8fdcbf66701b0944d4ccce3fa46dd04b61e5df68b9f16d57b2e0e3f0be, vars: {}, profile: , target: , version: 1.11.11
+[0m14:12:16.905635 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m14:12:16.905837 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m14:12:16.905933 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m14:12:16.921583 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '3c427ae3-ee8a-4fa7-9eaf-9d93c4ea8f26', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d33b950>]}
+[0m14:12:16.975617 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/r0ebot/Projects/bluesky-lakehouse/analytics/target/manifest.json
+[0m14:12:16.976347 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/r0ebot/Projects/bluesky-lakehouse/analytics/target/semantic_manifest.json
+[0m14:12:17.025038 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '3c427ae3-ee8a-4fa7-9eaf-9d93c4ea8f26', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e348aa0>]}
+[0m14:12:17.025249 [info ] [MainThread]: Found 3 models, 7 data tests, 1 source, 601 macros
+[0m14:12:17.025362 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '3c427ae3-ee8a-4fa7-9eaf-9d93c4ea8f26', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d3f7310>]}
+[0m14:12:17.026035 [info ] [MainThread]: 
+[0m14:12:17.026147 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m14:12:17.026233 [info ] [MainThread]: 
+[0m14:12:17.026387 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m14:12:17.027920 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_analytics_main'
+[0m14:12:17.045900 [debug] [ThreadPool]: Using duckdb connection "list_analytics_main"
+[0m14:12:17.046038 [debug] [ThreadPool]: On list_analytics_main: BEGIN
+[0m14:12:17.046126 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:12:17.102842 [debug] [ThreadPool]: SQL status: OK in 0.057 seconds
+[0m14:12:17.103080 [debug] [ThreadPool]: Using duckdb connection "list_analytics_main"
+[0m14:12:17.103195 [debug] [ThreadPool]: On list_analytics_main: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "bluesky_lakehouse", "target_name": "dev", "connection_name": "list_analytics_main"} */
+select
+      'analytics' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'analytics'
+  
+[0m14:12:17.104388 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m14:12:17.105044 [debug] [ThreadPool]: On list_analytics_main: ROLLBACK
+[0m14:12:17.105791 [debug] [ThreadPool]: Failed to rollback 'list_analytics_main'
+[0m14:12:17.105920 [debug] [ThreadPool]: On list_analytics_main: Close
+[0m14:12:17.106451 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '3c427ae3-ee8a-4fa7-9eaf-9d93c4ea8f26', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d75c6d0>]}
+[0m14:12:17.106678 [debug] [MainThread]: Using duckdb connection "master"
+[0m14:12:17.106776 [debug] [MainThread]: On master: BEGIN
+[0m14:12:17.106860 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m14:12:17.107292 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m14:12:17.107384 [debug] [MainThread]: On master: COMMIT
+[0m14:12:17.107468 [debug] [MainThread]: Using duckdb connection "master"
+[0m14:12:17.107544 [debug] [MainThread]: On master: COMMIT
+[0m14:12:17.107655 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m14:12:17.107747 [debug] [MainThread]: On master: Close
+[0m14:12:17.108757 [debug] [Thread-1 (]: Began running node test.bluesky_lakehouse.dbt_utils_expression_is_true_fct_posts_hourly_post_count___0.c54038aa4e
+[0m14:12:17.108890 [info ] [Thread-1 (]: 1 of 7 START test dbt_utils_expression_is_true_fct_posts_hourly_post_count___0 . [RUN]
+[0m14:12:17.109027 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_analytics_main, now test.bluesky_lakehouse.dbt_utils_expression_is_true_fct_posts_hourly_post_count___0.c54038aa4e)
+[0m14:12:17.109132 [debug] [Thread-1 (]: Began compiling node test.bluesky_lakehouse.dbt_utils_expression_is_true_fct_posts_hourly_post_count___0.c54038aa4e
+[0m14:12:17.115063 [debug] [Thread-1 (]: Writing injected SQL for node "test.bluesky_lakehouse.dbt_utils_expression_is_true_fct_posts_hourly_post_count___0.c54038aa4e"
+[0m14:12:17.115377 [debug] [Thread-1 (]: Began executing node test.bluesky_lakehouse.dbt_utils_expression_is_true_fct_posts_hourly_post_count___0.c54038aa4e
+[0m14:12:17.121014 [debug] [Thread-1 (]: Writing runtime sql for node "test.bluesky_lakehouse.dbt_utils_expression_is_true_fct_posts_hourly_post_count___0.c54038aa4e"
+[0m14:12:17.121320 [debug] [Thread-1 (]: Using duckdb connection "test.bluesky_lakehouse.dbt_utils_expression_is_true_fct_posts_hourly_post_count___0.c54038aa4e"
+[0m14:12:17.121436 [debug] [Thread-1 (]: On test.bluesky_lakehouse.dbt_utils_expression_is_true_fct_posts_hourly_post_count___0.c54038aa4e: BEGIN
+[0m14:12:17.121534 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:12:17.121996 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m14:12:17.122140 [debug] [Thread-1 (]: Using duckdb connection "test.bluesky_lakehouse.dbt_utils_expression_is_true_fct_posts_hourly_post_count___0.c54038aa4e"
+[0m14:12:17.122259 [debug] [Thread-1 (]: On test.bluesky_lakehouse.dbt_utils_expression_is_true_fct_posts_hourly_post_count___0.c54038aa4e: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "bluesky_lakehouse", "target_name": "dev", "node_id": "test.bluesky_lakehouse.dbt_utils_expression_is_true_fct_posts_hourly_post_count___0.c54038aa4e"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+
+
+
+select
+    1
+from "analytics"."main"."fct_posts_hourly"
+
+where not(post_count >= 0)
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:12:17.123179 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m14:12:17.124641 [debug] [Thread-1 (]: On test.bluesky_lakehouse.dbt_utils_expression_is_true_fct_posts_hourly_post_count___0.c54038aa4e: ROLLBACK
+[0m14:12:17.124857 [debug] [Thread-1 (]: Failed to rollback 'test.bluesky_lakehouse.dbt_utils_expression_is_true_fct_posts_hourly_post_count___0.c54038aa4e'
+[0m14:12:17.124968 [debug] [Thread-1 (]: On test.bluesky_lakehouse.dbt_utils_expression_is_true_fct_posts_hourly_post_count___0.c54038aa4e: Close
+[0m14:12:17.125151 [info ] [Thread-1 (]: 1 of 7 PASS dbt_utils_expression_is_true_fct_posts_hourly_post_count___0 ....... [[32mPASS[0m in 0.02s]
+[0m14:12:17.125314 [debug] [Thread-1 (]: Finished running node test.bluesky_lakehouse.dbt_utils_expression_is_true_fct_posts_hourly_post_count___0.c54038aa4e
+[0m14:12:17.125424 [debug] [Thread-1 (]: Began running node test.bluesky_lakehouse.not_null_dim_languages_lang_code.a1b0880650
+[0m14:12:17.125568 [info ] [Thread-1 (]: 2 of 7 START test not_null_dim_languages_lang_code ............................. [RUN]
+[0m14:12:17.125711 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.bluesky_lakehouse.dbt_utils_expression_is_true_fct_posts_hourly_post_count___0.c54038aa4e, now test.bluesky_lakehouse.not_null_dim_languages_lang_code.a1b0880650)
+[0m14:12:17.125817 [debug] [Thread-1 (]: Began compiling node test.bluesky_lakehouse.not_null_dim_languages_lang_code.a1b0880650
+[0m14:12:17.127957 [debug] [Thread-1 (]: Writing injected SQL for node "test.bluesky_lakehouse.not_null_dim_languages_lang_code.a1b0880650"
+[0m14:12:17.128191 [debug] [Thread-1 (]: Began executing node test.bluesky_lakehouse.not_null_dim_languages_lang_code.a1b0880650
+[0m14:12:17.128872 [debug] [Thread-1 (]: Writing runtime sql for node "test.bluesky_lakehouse.not_null_dim_languages_lang_code.a1b0880650"
+[0m14:12:17.129069 [debug] [Thread-1 (]: Using duckdb connection "test.bluesky_lakehouse.not_null_dim_languages_lang_code.a1b0880650"
+[0m14:12:17.129168 [debug] [Thread-1 (]: On test.bluesky_lakehouse.not_null_dim_languages_lang_code.a1b0880650: BEGIN
+[0m14:12:17.129260 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:12:17.129678 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m14:12:17.129775 [debug] [Thread-1 (]: Using duckdb connection "test.bluesky_lakehouse.not_null_dim_languages_lang_code.a1b0880650"
+[0m14:12:17.129873 [debug] [Thread-1 (]: On test.bluesky_lakehouse.not_null_dim_languages_lang_code.a1b0880650: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "bluesky_lakehouse", "target_name": "dev", "node_id": "test.bluesky_lakehouse.not_null_dim_languages_lang_code.a1b0880650"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select lang_code
+from "analytics"."main"."dim_languages"
+where lang_code is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:12:17.130145 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m14:12:17.130554 [debug] [Thread-1 (]: On test.bluesky_lakehouse.not_null_dim_languages_lang_code.a1b0880650: ROLLBACK
+[0m14:12:17.130727 [debug] [Thread-1 (]: Failed to rollback 'test.bluesky_lakehouse.not_null_dim_languages_lang_code.a1b0880650'
+[0m14:12:17.130820 [debug] [Thread-1 (]: On test.bluesky_lakehouse.not_null_dim_languages_lang_code.a1b0880650: Close
+[0m14:12:17.130971 [info ] [Thread-1 (]: 2 of 7 PASS not_null_dim_languages_lang_code ................................... [[32mPASS[0m in 0.01s]
+[0m14:12:17.131118 [debug] [Thread-1 (]: Finished running node test.bluesky_lakehouse.not_null_dim_languages_lang_code.a1b0880650
+[0m14:12:17.131221 [debug] [Thread-1 (]: Began running node test.bluesky_lakehouse.not_null_fct_posts_hourly_hour_bucket.30c98397f7
+[0m14:12:17.131316 [info ] [Thread-1 (]: 3 of 7 START test not_null_fct_posts_hourly_hour_bucket ........................ [RUN]
+[0m14:12:17.131429 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.bluesky_lakehouse.not_null_dim_languages_lang_code.a1b0880650, now test.bluesky_lakehouse.not_null_fct_posts_hourly_hour_bucket.30c98397f7)
+[0m14:12:17.131553 [debug] [Thread-1 (]: Began compiling node test.bluesky_lakehouse.not_null_fct_posts_hourly_hour_bucket.30c98397f7
+[0m14:12:17.132856 [debug] [Thread-1 (]: Writing injected SQL for node "test.bluesky_lakehouse.not_null_fct_posts_hourly_hour_bucket.30c98397f7"
+[0m14:12:17.133039 [debug] [Thread-1 (]: Began executing node test.bluesky_lakehouse.not_null_fct_posts_hourly_hour_bucket.30c98397f7
+[0m14:12:17.133679 [debug] [Thread-1 (]: Writing runtime sql for node "test.bluesky_lakehouse.not_null_fct_posts_hourly_hour_bucket.30c98397f7"
+[0m14:12:17.133862 [debug] [Thread-1 (]: Using duckdb connection "test.bluesky_lakehouse.not_null_fct_posts_hourly_hour_bucket.30c98397f7"
+[0m14:12:17.133964 [debug] [Thread-1 (]: On test.bluesky_lakehouse.not_null_fct_posts_hourly_hour_bucket.30c98397f7: BEGIN
+[0m14:12:17.134053 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:12:17.134462 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m14:12:17.134559 [debug] [Thread-1 (]: Using duckdb connection "test.bluesky_lakehouse.not_null_fct_posts_hourly_hour_bucket.30c98397f7"
+[0m14:12:17.134658 [debug] [Thread-1 (]: On test.bluesky_lakehouse.not_null_fct_posts_hourly_hour_bucket.30c98397f7: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "bluesky_lakehouse", "target_name": "dev", "node_id": "test.bluesky_lakehouse.not_null_fct_posts_hourly_hour_bucket.30c98397f7"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select hour_bucket
+from "analytics"."main"."fct_posts_hourly"
+where hour_bucket is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:12:17.134919 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m14:12:17.135341 [debug] [Thread-1 (]: On test.bluesky_lakehouse.not_null_fct_posts_hourly_hour_bucket.30c98397f7: ROLLBACK
+[0m14:12:17.135530 [debug] [Thread-1 (]: Failed to rollback 'test.bluesky_lakehouse.not_null_fct_posts_hourly_hour_bucket.30c98397f7'
+[0m14:12:17.135631 [debug] [Thread-1 (]: On test.bluesky_lakehouse.not_null_fct_posts_hourly_hour_bucket.30c98397f7: Close
+[0m14:12:17.135789 [info ] [Thread-1 (]: 3 of 7 PASS not_null_fct_posts_hourly_hour_bucket .............................. [[32mPASS[0m in 0.00s]
+[0m14:12:17.135940 [debug] [Thread-1 (]: Finished running node test.bluesky_lakehouse.not_null_fct_posts_hourly_hour_bucket.30c98397f7
+[0m14:12:17.136050 [debug] [Thread-1 (]: Began running node test.bluesky_lakehouse.not_null_stg_posts_did.9053e02bb6
+[0m14:12:17.136148 [info ] [Thread-1 (]: 4 of 7 START test not_null_stg_posts_did ....................................... [RUN]
+[0m14:12:17.136263 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.bluesky_lakehouse.not_null_fct_posts_hourly_hour_bucket.30c98397f7, now test.bluesky_lakehouse.not_null_stg_posts_did.9053e02bb6)
+[0m14:12:17.136376 [debug] [Thread-1 (]: Began compiling node test.bluesky_lakehouse.not_null_stg_posts_did.9053e02bb6
+[0m14:12:17.137566 [debug] [Thread-1 (]: Writing injected SQL for node "test.bluesky_lakehouse.not_null_stg_posts_did.9053e02bb6"
+[0m14:12:17.137786 [debug] [Thread-1 (]: Began executing node test.bluesky_lakehouse.not_null_stg_posts_did.9053e02bb6
+[0m14:12:17.138410 [debug] [Thread-1 (]: Writing runtime sql for node "test.bluesky_lakehouse.not_null_stg_posts_did.9053e02bb6"
+[0m14:12:17.138617 [debug] [Thread-1 (]: Using duckdb connection "test.bluesky_lakehouse.not_null_stg_posts_did.9053e02bb6"
+[0m14:12:17.138712 [debug] [Thread-1 (]: On test.bluesky_lakehouse.not_null_stg_posts_did.9053e02bb6: BEGIN
+[0m14:12:17.138800 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:12:17.139207 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m14:12:17.139302 [debug] [Thread-1 (]: Using duckdb connection "test.bluesky_lakehouse.not_null_stg_posts_did.9053e02bb6"
+[0m14:12:17.139400 [debug] [Thread-1 (]: On test.bluesky_lakehouse.not_null_stg_posts_did.9053e02bb6: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "bluesky_lakehouse", "target_name": "dev", "node_id": "test.bluesky_lakehouse.not_null_stg_posts_did.9053e02bb6"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select did
+from "analytics"."main"."stg_posts"
+where did is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:12:17.172332 [debug] [Thread-1 (]: SQL status: OK in 0.033 seconds
+[0m14:12:17.173400 [debug] [Thread-1 (]: On test.bluesky_lakehouse.not_null_stg_posts_did.9053e02bb6: ROLLBACK
+[0m14:12:17.173683 [debug] [Thread-1 (]: Failed to rollback 'test.bluesky_lakehouse.not_null_stg_posts_did.9053e02bb6'
+[0m14:12:17.173797 [debug] [Thread-1 (]: On test.bluesky_lakehouse.not_null_stg_posts_did.9053e02bb6: Close
+[0m14:12:17.173993 [info ] [Thread-1 (]: 4 of 7 PASS not_null_stg_posts_did ............................................. [[32mPASS[0m in 0.04s]
+[0m14:12:17.174158 [debug] [Thread-1 (]: Finished running node test.bluesky_lakehouse.not_null_stg_posts_did.9053e02bb6
+[0m14:12:17.174271 [debug] [Thread-1 (]: Began running node test.bluesky_lakehouse.not_null_stg_posts_event_time.e736a4acad
+[0m14:12:17.174371 [info ] [Thread-1 (]: 5 of 7 START test not_null_stg_posts_event_time ................................ [RUN]
+[0m14:12:17.174489 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.bluesky_lakehouse.not_null_stg_posts_did.9053e02bb6, now test.bluesky_lakehouse.not_null_stg_posts_event_time.e736a4acad)
+[0m14:12:17.174634 [debug] [Thread-1 (]: Began compiling node test.bluesky_lakehouse.not_null_stg_posts_event_time.e736a4acad
+[0m14:12:17.176111 [debug] [Thread-1 (]: Writing injected SQL for node "test.bluesky_lakehouse.not_null_stg_posts_event_time.e736a4acad"
+[0m14:12:17.176396 [debug] [Thread-1 (]: Began executing node test.bluesky_lakehouse.not_null_stg_posts_event_time.e736a4acad
+[0m14:12:17.178531 [debug] [Thread-1 (]: Writing runtime sql for node "test.bluesky_lakehouse.not_null_stg_posts_event_time.e736a4acad"
+[0m14:12:17.178760 [debug] [Thread-1 (]: Using duckdb connection "test.bluesky_lakehouse.not_null_stg_posts_event_time.e736a4acad"
+[0m14:12:17.178865 [debug] [Thread-1 (]: On test.bluesky_lakehouse.not_null_stg_posts_event_time.e736a4acad: BEGIN
+[0m14:12:17.178961 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:12:17.179443 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m14:12:17.179582 [debug] [Thread-1 (]: Using duckdb connection "test.bluesky_lakehouse.not_null_stg_posts_event_time.e736a4acad"
+[0m14:12:17.179696 [debug] [Thread-1 (]: On test.bluesky_lakehouse.not_null_stg_posts_event_time.e736a4acad: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "bluesky_lakehouse", "target_name": "dev", "node_id": "test.bluesky_lakehouse.not_null_stg_posts_event_time.e736a4acad"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select event_time
+from "analytics"."main"."stg_posts"
+where event_time is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:12:17.195903 [debug] [Thread-1 (]: SQL status: OK in 0.016 seconds
+[0m14:12:17.196803 [debug] [Thread-1 (]: On test.bluesky_lakehouse.not_null_stg_posts_event_time.e736a4acad: ROLLBACK
+[0m14:12:17.197063 [debug] [Thread-1 (]: Failed to rollback 'test.bluesky_lakehouse.not_null_stg_posts_event_time.e736a4acad'
+[0m14:12:17.197186 [debug] [Thread-1 (]: On test.bluesky_lakehouse.not_null_stg_posts_event_time.e736a4acad: Close
+[0m14:12:17.197388 [info ] [Thread-1 (]: 5 of 7 PASS not_null_stg_posts_event_time ...................................... [[32mPASS[0m in 0.02s]
+[0m14:12:17.197557 [debug] [Thread-1 (]: Finished running node test.bluesky_lakehouse.not_null_stg_posts_event_time.e736a4acad
+[0m14:12:17.197670 [debug] [Thread-1 (]: Began running node test.bluesky_lakehouse.not_null_stg_posts_text.c18f44a454
+[0m14:12:17.197804 [info ] [Thread-1 (]: 6 of 7 START test not_null_stg_posts_text ...................................... [RUN]
+[0m14:12:17.197951 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.bluesky_lakehouse.not_null_stg_posts_event_time.e736a4acad, now test.bluesky_lakehouse.not_null_stg_posts_text.c18f44a454)
+[0m14:12:17.198058 [debug] [Thread-1 (]: Began compiling node test.bluesky_lakehouse.not_null_stg_posts_text.c18f44a454
+[0m14:12:17.199485 [debug] [Thread-1 (]: Writing injected SQL for node "test.bluesky_lakehouse.not_null_stg_posts_text.c18f44a454"
+[0m14:12:17.199759 [debug] [Thread-1 (]: Began executing node test.bluesky_lakehouse.not_null_stg_posts_text.c18f44a454
+[0m14:12:17.200609 [debug] [Thread-1 (]: Writing runtime sql for node "test.bluesky_lakehouse.not_null_stg_posts_text.c18f44a454"
+[0m14:12:17.200821 [debug] [Thread-1 (]: Using duckdb connection "test.bluesky_lakehouse.not_null_stg_posts_text.c18f44a454"
+[0m14:12:17.200922 [debug] [Thread-1 (]: On test.bluesky_lakehouse.not_null_stg_posts_text.c18f44a454: BEGIN
+[0m14:12:17.201013 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:12:17.201539 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m14:12:17.201666 [debug] [Thread-1 (]: Using duckdb connection "test.bluesky_lakehouse.not_null_stg_posts_text.c18f44a454"
+[0m14:12:17.201771 [debug] [Thread-1 (]: On test.bluesky_lakehouse.not_null_stg_posts_text.c18f44a454: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "bluesky_lakehouse", "target_name": "dev", "node_id": "test.bluesky_lakehouse.not_null_stg_posts_text.c18f44a454"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select text
+from "analytics"."main"."stg_posts"
+where text is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:12:17.213047 [debug] [Thread-1 (]: SQL status: OK in 0.011 seconds
+[0m14:12:17.213848 [debug] [Thread-1 (]: On test.bluesky_lakehouse.not_null_stg_posts_text.c18f44a454: ROLLBACK
+[0m14:12:17.214088 [debug] [Thread-1 (]: Failed to rollback 'test.bluesky_lakehouse.not_null_stg_posts_text.c18f44a454'
+[0m14:12:17.214198 [debug] [Thread-1 (]: On test.bluesky_lakehouse.not_null_stg_posts_text.c18f44a454: Close
+[0m14:12:17.214384 [info ] [Thread-1 (]: 6 of 7 PASS not_null_stg_posts_text ............................................ [[32mPASS[0m in 0.02s]
+[0m14:12:17.214545 [debug] [Thread-1 (]: Finished running node test.bluesky_lakehouse.not_null_stg_posts_text.c18f44a454
+[0m14:12:17.214660 [debug] [Thread-1 (]: Began running node test.bluesky_lakehouse.unique_dim_languages_lang_code.e813807fd0
+[0m14:12:17.214799 [info ] [Thread-1 (]: 7 of 7 START test unique_dim_languages_lang_code ............................... [RUN]
+[0m14:12:17.214951 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.bluesky_lakehouse.not_null_stg_posts_text.c18f44a454, now test.bluesky_lakehouse.unique_dim_languages_lang_code.e813807fd0)
+[0m14:12:17.215061 [debug] [Thread-1 (]: Began compiling node test.bluesky_lakehouse.unique_dim_languages_lang_code.e813807fd0
+[0m14:12:17.217184 [debug] [Thread-1 (]: Writing injected SQL for node "test.bluesky_lakehouse.unique_dim_languages_lang_code.e813807fd0"
+[0m14:12:17.217463 [debug] [Thread-1 (]: Began executing node test.bluesky_lakehouse.unique_dim_languages_lang_code.e813807fd0
+[0m14:12:17.218317 [debug] [Thread-1 (]: Writing runtime sql for node "test.bluesky_lakehouse.unique_dim_languages_lang_code.e813807fd0"
+[0m14:12:17.218528 [debug] [Thread-1 (]: Using duckdb connection "test.bluesky_lakehouse.unique_dim_languages_lang_code.e813807fd0"
+[0m14:12:17.218630 [debug] [Thread-1 (]: On test.bluesky_lakehouse.unique_dim_languages_lang_code.e813807fd0: BEGIN
+[0m14:12:17.218724 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:12:17.219190 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m14:12:17.219294 [debug] [Thread-1 (]: Using duckdb connection "test.bluesky_lakehouse.unique_dim_languages_lang_code.e813807fd0"
+[0m14:12:17.219402 [debug] [Thread-1 (]: On test.bluesky_lakehouse.unique_dim_languages_lang_code.e813807fd0: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "bluesky_lakehouse", "target_name": "dev", "node_id": "test.bluesky_lakehouse.unique_dim_languages_lang_code.e813807fd0"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    lang_code as unique_field,
+    count(*) as n_records
+
+from "analytics"."main"."dim_languages"
+where lang_code is not null
+group by lang_code
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m14:12:17.220689 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m14:12:17.221128 [debug] [Thread-1 (]: On test.bluesky_lakehouse.unique_dim_languages_lang_code.e813807fd0: ROLLBACK
+[0m14:12:17.221322 [debug] [Thread-1 (]: Failed to rollback 'test.bluesky_lakehouse.unique_dim_languages_lang_code.e813807fd0'
+[0m14:12:17.221420 [debug] [Thread-1 (]: On test.bluesky_lakehouse.unique_dim_languages_lang_code.e813807fd0: Close
+[0m14:12:17.221579 [info ] [Thread-1 (]: 7 of 7 PASS unique_dim_languages_lang_code ..................................... [[32mPASS[0m in 0.01s]
+[0m14:12:17.221729 [debug] [Thread-1 (]: Finished running node test.bluesky_lakehouse.unique_dim_languages_lang_code.e813807fd0
+[0m14:12:17.222178 [debug] [MainThread]: Using duckdb connection "master"
+[0m14:12:17.222282 [debug] [MainThread]: On master: BEGIN
+[0m14:12:17.222361 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m14:12:17.222768 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m14:12:17.222859 [debug] [MainThread]: On master: COMMIT
+[0m14:12:17.222941 [debug] [MainThread]: Using duckdb connection "master"
+[0m14:12:17.223150 [debug] [MainThread]: On master: COMMIT
+[0m14:12:17.223334 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m14:12:17.223438 [debug] [MainThread]: On master: Close
+[0m14:12:17.223556 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m14:12:17.223640 [debug] [MainThread]: Connection 'test.bluesky_lakehouse.unique_dim_languages_lang_code.e813807fd0' was properly closed.
+[0m14:12:17.223742 [info ] [MainThread]: 
+[0m14:12:17.223844 [info ] [MainThread]: Finished running 7 data tests in 0 hours 0 minutes and 0.20 seconds (0.20s).
+[0m14:12:17.224221 [debug] [MainThread]: Command end result
+[0m14:12:17.236044 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/r0ebot/Projects/bluesky-lakehouse/analytics/target/manifest.json
+[0m14:12:17.236723 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/r0ebot/Projects/bluesky-lakehouse/analytics/target/semantic_manifest.json
+[0m14:12:17.238998 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/r0ebot/Projects/bluesky-lakehouse/analytics/target/run_results.json
+[0m14:12:17.239102 [info ] [MainThread]: 
+[0m14:12:17.239211 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m14:12:17.239295 [info ] [MainThread]: 
+[0m14:12:17.239393 [info ] [MainThread]: Done. PASS=7 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=7
+[0m14:12:17.241298 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": true, "command_wall_clock_time": 0.5554652, "process_in_blocks": "0", "process_kernel_time": 0.226827, "process_mem_max_rss": "243630080", "process_out_blocks": "0", "process_user_time": 1.068367}
+[0m14:12:17.241454 [debug] [MainThread]: Command `dbt test` succeeded at 14:12:17.241427 after 0.56 seconds
+[0m14:12:17.241580 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d033710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e35d180>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e35c680>]}
+[0m14:12:17.241701 [debug] [MainThread]: Flushing usage events
+[0m14:12:19.119316 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:12:36.050156 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10cf823c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e18b610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e18b750>]}
+
+
+============================== 14:12:36.051998 | 41a8fc93-af15-43f7-87b4-e598d15f4ad7 ==============================
+[0m14:12:36.051998 [info ] [MainThread]: Running with dbt=1.11.11
+[0m14:12:36.052205 [debug] [MainThread]: running dbt with arguments {'write_json': 'True', 'introspect': 'True', 'debug': 'False', 'indirect_selection': 'eager', 'fail_fast': 'False', 'log_cache_events': 'False', 'no_print': 'None', 'send_anonymous_usage_stats': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'partial_parse': 'True', 'log_format': 'default', 'version_check': 'True', 'profiles_dir': '.', 'invocation_command': 'dbt docs generate', 'printer_width': '80', 'warn_error': 'None', 'static_parser': 'True', 'log_path': '/Users/r0ebot/Projects/bluesky-lakehouse/analytics/logs', 'empty': 'None', 'cache_selected_only': 'False', 'target_path': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'quiet': 'False'}
+[0m14:12:36.124080 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '41a8fc93-af15-43f7-87b4-e598d15f4ad7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d4256e0>]}
+[0m14:12:36.144303 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '41a8fc93-af15-43f7-87b4-e598d15f4ad7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e1f9040>]}
+[0m14:12:36.148797 [info ] [MainThread]: Registered adapter: duckdb=1.10.1
+[0m14:12:36.183245 [debug] [MainThread]: checksum: 30a8cc8fdcbf66701b0944d4ccce3fa46dd04b61e5df68b9f16d57b2e0e3f0be, vars: {}, profile: , target: , version: 1.11.11
+[0m14:12:36.238407 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m14:12:36.238583 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m14:12:36.238679 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m14:12:36.253540 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '41a8fc93-af15-43f7-87b4-e598d15f4ad7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e1f7850>]}
+[0m14:12:36.259693 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '41a8fc93-af15-43f7-87b4-e598d15f4ad7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e63a990>]}
+[0m14:12:36.259874 [info ] [MainThread]: Found 3 models, 7 data tests, 1 source, 601 macros
+[0m14:12:36.259987 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '41a8fc93-af15-43f7-87b4-e598d15f4ad7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e660830>]}
+[0m14:12:36.260656 [info ] [MainThread]: 
+[0m14:12:36.260772 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m14:12:36.260861 [info ] [MainThread]: 
+[0m14:12:36.261010 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m14:12:36.262457 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_analytics_main'
+[0m14:12:36.284457 [debug] [ThreadPool]: Using duckdb connection "list_analytics_main"
+[0m14:12:36.284595 [debug] [ThreadPool]: On list_analytics_main: BEGIN
+[0m14:12:36.284692 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:12:36.332817 [debug] [ThreadPool]: SQL status: OK in 0.048 seconds
+[0m14:12:36.332997 [debug] [ThreadPool]: Using duckdb connection "list_analytics_main"
+[0m14:12:36.333094 [debug] [ThreadPool]: On list_analytics_main: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "bluesky_lakehouse", "target_name": "dev", "connection_name": "list_analytics_main"} */
+select
+      'analytics' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'analytics'
+  
+[0m14:12:36.334251 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m14:12:36.334790 [debug] [ThreadPool]: On list_analytics_main: ROLLBACK
+[0m14:12:36.335475 [debug] [ThreadPool]: Failed to rollback 'list_analytics_main'
+[0m14:12:36.335607 [debug] [ThreadPool]: On list_analytics_main: Close
+[0m14:12:36.335977 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '41a8fc93-af15-43f7-87b4-e598d15f4ad7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ea40a10>]}
+[0m14:12:36.336917 [debug] [Thread-1 (]: Began running node model.bluesky_lakehouse.stg_posts
+[0m14:12:36.337054 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_analytics_main, now model.bluesky_lakehouse.stg_posts)
+[0m14:12:36.337158 [debug] [Thread-1 (]: Began compiling node model.bluesky_lakehouse.stg_posts
+[0m14:12:36.339540 [debug] [Thread-1 (]: Writing injected SQL for node "model.bluesky_lakehouse.stg_posts"
+[0m14:12:36.339776 [debug] [Thread-1 (]: Began executing node model.bluesky_lakehouse.stg_posts
+[0m14:12:36.339982 [debug] [Thread-1 (]: Finished running node model.bluesky_lakehouse.stg_posts
+[0m14:12:36.340246 [debug] [Thread-1 (]: Began running node model.bluesky_lakehouse.dim_languages
+[0m14:12:36.340376 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.bluesky_lakehouse.stg_posts, now model.bluesky_lakehouse.dim_languages)
+[0m14:12:36.340476 [debug] [Thread-1 (]: Began compiling node model.bluesky_lakehouse.dim_languages
+[0m14:12:36.364249 [debug] [Thread-1 (]: Writing injected SQL for node "model.bluesky_lakehouse.dim_languages"
+[0m14:12:36.364603 [debug] [Thread-1 (]: Began executing node model.bluesky_lakehouse.dim_languages
+[0m14:12:36.364827 [debug] [Thread-1 (]: Finished running node model.bluesky_lakehouse.dim_languages
+[0m14:12:36.364950 [debug] [Thread-1 (]: Began running node model.bluesky_lakehouse.fct_posts_hourly
+[0m14:12:36.365126 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.bluesky_lakehouse.dim_languages, now model.bluesky_lakehouse.fct_posts_hourly)
+[0m14:12:36.365301 [debug] [Thread-1 (]: Began compiling node model.bluesky_lakehouse.fct_posts_hourly
+[0m14:12:36.366329 [debug] [Thread-1 (]: Writing injected SQL for node "model.bluesky_lakehouse.fct_posts_hourly"
+[0m14:12:36.366563 [debug] [Thread-1 (]: Began executing node model.bluesky_lakehouse.fct_posts_hourly
+[0m14:12:36.366763 [debug] [Thread-1 (]: Finished running node model.bluesky_lakehouse.fct_posts_hourly
+[0m14:12:36.366889 [debug] [Thread-1 (]: Began running node test.bluesky_lakehouse.not_null_stg_posts_did.9053e02bb6
+[0m14:12:36.367022 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.bluesky_lakehouse.fct_posts_hourly, now test.bluesky_lakehouse.not_null_stg_posts_did.9053e02bb6)
+[0m14:12:36.367164 [debug] [Thread-1 (]: Began compiling node test.bluesky_lakehouse.not_null_stg_posts_did.9053e02bb6
+[0m14:12:36.370928 [debug] [Thread-1 (]: Writing injected SQL for node "test.bluesky_lakehouse.not_null_stg_posts_did.9053e02bb6"
+[0m14:12:36.371159 [debug] [Thread-1 (]: Began executing node test.bluesky_lakehouse.not_null_stg_posts_did.9053e02bb6
+[0m14:12:36.371353 [debug] [Thread-1 (]: Finished running node test.bluesky_lakehouse.not_null_stg_posts_did.9053e02bb6
+[0m14:12:36.371468 [debug] [Thread-1 (]: Began running node test.bluesky_lakehouse.not_null_stg_posts_event_time.e736a4acad
+[0m14:12:36.371587 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.bluesky_lakehouse.not_null_stg_posts_did.9053e02bb6, now test.bluesky_lakehouse.not_null_stg_posts_event_time.e736a4acad)
+[0m14:12:36.371700 [debug] [Thread-1 (]: Began compiling node test.bluesky_lakehouse.not_null_stg_posts_event_time.e736a4acad
+[0m14:12:36.372853 [debug] [Thread-1 (]: Writing injected SQL for node "test.bluesky_lakehouse.not_null_stg_posts_event_time.e736a4acad"
+[0m14:12:36.373067 [debug] [Thread-1 (]: Began executing node test.bluesky_lakehouse.not_null_stg_posts_event_time.e736a4acad
+[0m14:12:36.373244 [debug] [Thread-1 (]: Finished running node test.bluesky_lakehouse.not_null_stg_posts_event_time.e736a4acad
+[0m14:12:36.373349 [debug] [Thread-1 (]: Began running node test.bluesky_lakehouse.not_null_stg_posts_text.c18f44a454
+[0m14:12:36.373466 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.bluesky_lakehouse.not_null_stg_posts_event_time.e736a4acad, now test.bluesky_lakehouse.not_null_stg_posts_text.c18f44a454)
+[0m14:12:36.373573 [debug] [Thread-1 (]: Began compiling node test.bluesky_lakehouse.not_null_stg_posts_text.c18f44a454
+[0m14:12:36.374863 [debug] [Thread-1 (]: Writing injected SQL for node "test.bluesky_lakehouse.not_null_stg_posts_text.c18f44a454"
+[0m14:12:36.375051 [debug] [Thread-1 (]: Began executing node test.bluesky_lakehouse.not_null_stg_posts_text.c18f44a454
+[0m14:12:36.375222 [debug] [Thread-1 (]: Finished running node test.bluesky_lakehouse.not_null_stg_posts_text.c18f44a454
+[0m14:12:36.375329 [debug] [Thread-1 (]: Began running node test.bluesky_lakehouse.not_null_dim_languages_lang_code.a1b0880650
+[0m14:12:36.375442 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.bluesky_lakehouse.not_null_stg_posts_text.c18f44a454, now test.bluesky_lakehouse.not_null_dim_languages_lang_code.a1b0880650)
+[0m14:12:36.375543 [debug] [Thread-1 (]: Began compiling node test.bluesky_lakehouse.not_null_dim_languages_lang_code.a1b0880650
+[0m14:12:36.376628 [debug] [Thread-1 (]: Writing injected SQL for node "test.bluesky_lakehouse.not_null_dim_languages_lang_code.a1b0880650"
+[0m14:12:36.376810 [debug] [Thread-1 (]: Began executing node test.bluesky_lakehouse.not_null_dim_languages_lang_code.a1b0880650
+[0m14:12:36.376980 [debug] [Thread-1 (]: Finished running node test.bluesky_lakehouse.not_null_dim_languages_lang_code.a1b0880650
+[0m14:12:36.377088 [debug] [Thread-1 (]: Began running node test.bluesky_lakehouse.unique_dim_languages_lang_code.e813807fd0
+[0m14:12:36.377210 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.bluesky_lakehouse.not_null_dim_languages_lang_code.a1b0880650, now test.bluesky_lakehouse.unique_dim_languages_lang_code.e813807fd0)
+[0m14:12:36.377314 [debug] [Thread-1 (]: Began compiling node test.bluesky_lakehouse.unique_dim_languages_lang_code.e813807fd0
+[0m14:12:36.379193 [debug] [Thread-1 (]: Writing injected SQL for node "test.bluesky_lakehouse.unique_dim_languages_lang_code.e813807fd0"
+[0m14:12:36.379383 [debug] [Thread-1 (]: Began executing node test.bluesky_lakehouse.unique_dim_languages_lang_code.e813807fd0
+[0m14:12:36.379567 [debug] [Thread-1 (]: Finished running node test.bluesky_lakehouse.unique_dim_languages_lang_code.e813807fd0
+[0m14:12:36.379683 [debug] [Thread-1 (]: Began running node test.bluesky_lakehouse.dbt_utils_expression_is_true_fct_posts_hourly_post_count___0.c54038aa4e
+[0m14:12:36.379813 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.bluesky_lakehouse.unique_dim_languages_lang_code.e813807fd0, now test.bluesky_lakehouse.dbt_utils_expression_is_true_fct_posts_hourly_post_count___0.c54038aa4e)
+[0m14:12:36.379941 [debug] [Thread-1 (]: Began compiling node test.bluesky_lakehouse.dbt_utils_expression_is_true_fct_posts_hourly_post_count___0.c54038aa4e
+[0m14:12:36.382419 [debug] [Thread-1 (]: Writing injected SQL for node "test.bluesky_lakehouse.dbt_utils_expression_is_true_fct_posts_hourly_post_count___0.c54038aa4e"
+[0m14:12:36.382624 [debug] [Thread-1 (]: Began executing node test.bluesky_lakehouse.dbt_utils_expression_is_true_fct_posts_hourly_post_count___0.c54038aa4e
+[0m14:12:36.382808 [debug] [Thread-1 (]: Finished running node test.bluesky_lakehouse.dbt_utils_expression_is_true_fct_posts_hourly_post_count___0.c54038aa4e
+[0m14:12:36.382916 [debug] [Thread-1 (]: Began running node test.bluesky_lakehouse.not_null_fct_posts_hourly_hour_bucket.30c98397f7
+[0m14:12:36.383033 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.bluesky_lakehouse.dbt_utils_expression_is_true_fct_posts_hourly_post_count___0.c54038aa4e, now test.bluesky_lakehouse.not_null_fct_posts_hourly_hour_bucket.30c98397f7)
+[0m14:12:36.383142 [debug] [Thread-1 (]: Began compiling node test.bluesky_lakehouse.not_null_fct_posts_hourly_hour_bucket.30c98397f7
+[0m14:12:36.384319 [debug] [Thread-1 (]: Writing injected SQL for node "test.bluesky_lakehouse.not_null_fct_posts_hourly_hour_bucket.30c98397f7"
+[0m14:12:36.384497 [debug] [Thread-1 (]: Began executing node test.bluesky_lakehouse.not_null_fct_posts_hourly_hour_bucket.30c98397f7
+[0m14:12:36.384670 [debug] [Thread-1 (]: Finished running node test.bluesky_lakehouse.not_null_fct_posts_hourly_hour_bucket.30c98397f7
+[0m14:12:36.385010 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m14:12:36.385099 [debug] [MainThread]: Connection 'test.bluesky_lakehouse.not_null_fct_posts_hourly_hour_bucket.30c98397f7' was properly closed.
+[0m14:12:36.385541 [debug] [MainThread]: Command end result
+[0m14:12:36.416915 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/r0ebot/Projects/bluesky-lakehouse/analytics/target/manifest.json
+[0m14:12:36.417825 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/r0ebot/Projects/bluesky-lakehouse/analytics/target/semantic_manifest.json
+[0m14:12:36.419948 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/r0ebot/Projects/bluesky-lakehouse/analytics/target/run_results.json
+[0m14:12:36.421194 [debug] [MainThread]: Acquiring new duckdb connection 'generate_catalog'
+[0m14:12:36.421288 [info ] [MainThread]: Building catalog
+[0m14:12:36.423962 [debug] [ThreadPool]: Acquiring new duckdb connection 'analytics.information_schema'
+[0m14:12:36.425904 [debug] [ThreadPool]: Using duckdb connection "analytics.information_schema"
+[0m14:12:36.426017 [debug] [ThreadPool]: On analytics.information_schema: BEGIN
+[0m14:12:36.426102 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:12:36.426617 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m14:12:36.426703 [debug] [ThreadPool]: Using duckdb connection "analytics.information_schema"
+[0m14:12:36.426795 [debug] [ThreadPool]: On analytics.information_schema: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "bluesky_lakehouse", "target_name": "dev", "connection_name": "analytics.information_schema"} */
+with relations AS (
+      select
+        t.table_name
+        , t.database_name
+        , t.schema_name
+        , 'BASE TABLE' as table_type
+        , t.comment as table_comment
+      from duckdb_tables() t
+      WHERE t.database_name = 'analytics'
+      UNION ALL
+      SELECT v.view_name as table_name
+      , v.database_name
+      , v.schema_name
+      , 'VIEW' as table_type
+      , v.comment as table_comment
+      from duckdb_views() v
+      WHERE v.database_name = 'analytics'
+    )
+    select
+        'analytics' as table_database,
+        r.schema_name as table_schema,
+        r.table_name,
+        r.table_type,
+        r.table_comment,
+        c.column_name,
+        c.column_index as column_index,
+        c.data_type as column_type,
+        c.comment as column_comment,
+        NULL as table_owner
+    FROM relations r JOIN duckdb_columns() c ON r.schema_name = c.schema_name AND r.table_name = c.table_name
+    WHERE (upper(r.schema_name) = upper('main') or upper(r.schema_name) = upper('bsky'))
+    ORDER BY
+        r.schema_name,
+        r.table_name,
+        c.column_index
+[0m14:12:36.432078 [debug] [ThreadPool]: SQL status: OK in 0.005 seconds
+[0m14:12:36.432965 [debug] [ThreadPool]: On analytics.information_schema: ROLLBACK
+[0m14:12:36.433182 [debug] [ThreadPool]: Failed to rollback 'analytics.information_schema'
+[0m14:12:36.433273 [debug] [ThreadPool]: On analytics.information_schema: Close
+[0m14:12:36.437145 [debug] [MainThread]: Wrote artifact CatalogArtifact to /Users/r0ebot/Projects/bluesky-lakehouse/analytics/target/catalog.json
+[0m14:12:36.448595 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/r0ebot/Projects/bluesky-lakehouse/analytics/target/manifest.json
+[0m14:12:36.449202 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/r0ebot/Projects/bluesky-lakehouse/analytics/target/semantic_manifest.json
+[0m14:12:36.449304 [info ] [MainThread]: Catalog written to /Users/r0ebot/Projects/bluesky-lakehouse/analytics/target/catalog.json
+[0m14:12:36.451091 [debug] [MainThread]: Resource report: {"command_name": "generate", "command_success": true, "command_wall_clock_time": 0.42848328, "process_in_blocks": "0", "process_kernel_time": 0.179527, "process_mem_max_rss": "166838272", "process_out_blocks": "0", "process_user_time": 0.880665}
+[0m14:12:36.451288 [debug] [MainThread]: Command `dbt docs generate` succeeded at 14:12:36.451257 after 0.43 seconds
+[0m14:12:36.451395 [debug] [MainThread]: Connection 'generate_catalog' was properly closed.
+[0m14:12:36.451475 [debug] [MainThread]: Connection 'analytics.information_schema' was properly closed.
+[0m14:12:36.451575 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10defb710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ea287e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e83bc20>]}
+[0m14:12:36.451686 [debug] [MainThread]: Flushing usage events
+[0m14:12:36.949355 [debug] [MainThread]: An error was encountered while trying to flush usage events
