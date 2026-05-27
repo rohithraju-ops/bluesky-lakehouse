@@ -7,3 +7,6 @@ __pycache__/
 .DS_Store
 data/
 *.parquet
+
+# Interview prep notes — local only, never pushed
+docs/build_log/
