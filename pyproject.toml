@@ -10,9 +10,11 @@ dependencies = [
     "dagster-dbt>=0.24",
     "dagster-webserver>=1.8",
     "dbt-duckdb>=1.8",
+    "duckdb>=1.5.3",
     "pandas>=3.0.3",
     "psycopg[binary]>=3",
     "pyarrow>=24.0.0",
     "pyiceberg[rest,s3fs]>=0.11.1",
+    "streamlit>=1.57.0",
     "websockets>=16.0",
 ]
