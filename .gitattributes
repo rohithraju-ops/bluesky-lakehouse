@@ -1,0 +1,12 @@
+# GitHub Linguist overrides — keeps the language stats accurate
+
+# dbt compiled/generated SQL is machine output, not handwritten code
+analytics/target/**        linguist-generated=true
+analytics/dbt_packages/**  linguist-vendored=true
+
+# Dagster temp files
+.tmp_dagster_home_*/**     linguist-generated=true
+
+# docs are documentation, not code
+docs/**                    linguist-documentation=true
+*.md                       linguist-documentation=true

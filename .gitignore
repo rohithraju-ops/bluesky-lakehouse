@@ -8,8 +8,18 @@ __pycache__/
 data/
 *.parquet
 
-# Interview prep notes — local only, never pushed
-docs/build_log/
-# bootstrap pid files
+# dbt — vendored packages and compiled output
+analytics/dbt_packages/
+analytics/target/
+analytics/*.duckdb
+
+# Dagster temp state
+.tmp_dagster_home_*/
+
+# pid files
 .ingestor.pid
 .streamlit.pid
+.dashboard.pid
+
+# Interview prep notes — local only, never pushed
+docs/build_log/
