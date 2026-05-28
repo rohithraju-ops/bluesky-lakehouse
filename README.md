@@ -14,7 +14,7 @@ flowchart LR
     D -->|psycopg3| G[Streamlit\nDashboard]
     F -->|DuckDB| G
     D -->|observe| H[Dagster\nOrchestrator]
-    F -->|@dbt_assets| H
+    F -->|dbt_assets| H
 
     style C fill:#e63946,color:#fff
     style D fill:#2a9d8f,color:#fff
